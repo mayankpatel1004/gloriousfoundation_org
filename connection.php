@@ -18,11 +18,11 @@ $google_site_verification = "lFxcTAQVnM-yZq-yQAP6jKb0TVkysMWH9Amu5zxJt-Q";
 $logo_url = $url."images/logo.png";
 $images_url = $url."images/";
 
-$admin_email = "mayank.patel104@gmail.com";
+$admin_email = "demo";
 $smtp_host = "smtp.hostinger.com";
 $stmp_port = 587;
-$smtp_user = "notifications@cloudswiftsolutions.com";
-$smtp_password = "Cloud@112018";
+$smtp_user = "demo";
+$smtp_password = "demo";
 
 // $facebook_url = "https://www.facebook.com/";
 // $twitter_url = "https://www.twitter.com/";
