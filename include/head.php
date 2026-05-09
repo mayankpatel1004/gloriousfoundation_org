@@ -20,6 +20,7 @@
     <link rel="stylesheet" type="text/css" href="<?php echo $url; ?>css/slick.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
     <link rel="stylesheet" href="<?php echo $url; ?>css/style.css">
+    <link rel="stylesheet" href="<?php echo $url; ?>css/custom.css">
     <link href="<?php echo $url; ?>css/aos.css" rel="stylesheet">
     <!---schema code start here--->
     <script type="application/ld+json">{

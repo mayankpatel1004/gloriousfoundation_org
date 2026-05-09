@@ -1,13 +1,13 @@
 <?php 
-$website_name = "Glorious Foundation";
+$website_name = "GIJNR";
 $default_meta_title = "Home | ".$website_name;
 $default_meta_description = "Default Meta Description | ".$website_name;;
 $website_type = "Organization";
-$url = "http://localhost/gloriousfoundation_org/";
-//$url = "https://gloriousfoundation.org/";
+$url = "http://localhost/gloriousjournal_com/";
+//$url = "https://gloriousjournal.com/";
 $contact = "+919844178870";
 $contact2 = "+919844178870";
-$email = "ginrafoundation@gmail.com";
+$email = "editorgloriousjournal@gmail.com";
 $address1 = "802, Teaching Staff Quarters,";
 $address2 = "At & PO Limda,Waghodiya, Parul University,";
 $city = "Vadodara";
