@@ -100,7 +100,7 @@
                                     <a class="dropdown-item" href="<?php echo $url;?>membership-privileges.php">Membership Privileges</a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="<?php echo $url;?>payment.php">Payment</a>
+                                    <a class="dropdown-item" href="https://forms.gle/soJhtdWtj7BufVLCA" target="_blank">Payment</a>
                                 </li>
                             </ul>
                         </li>
@@ -123,7 +123,7 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="<?php echo $url;?>announcements.php">Announcements</a>
+                            <a class="nav-link" href="<?php echo $url;?>awards.php">Awards</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="https://gloriousjournal.com/" target="_blank">GIJNR Journal</a>
