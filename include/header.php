@@ -95,9 +95,6 @@
                                     <a class="dropdown-item" href="<?php echo $url;?>research-grants.php">Research Grants</a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="<?php echo $url;?>fellowships.php">Fellowships</a>
-                                </li>
-                                <li>
                                     <a class="dropdown-item" href="<?php echo $url;?>scholarships.php">Scholarships</a>
                                 </li>
                                 <li>
@@ -106,9 +103,12 @@
                             </ul>
                         </li>
 
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="<?php echo $url;?>fellowships.php">Fellowship</a>
+                        </li>
 
                         <li class="nav-item dropdown">
-                            <a class="nav-link" href="results.php" data-bs-toggle="dropdown" role="button" id="navbarDropdown">Memberships <i class="fa fa-chevron-down"></i></a>
+                            <a class="nav-link" href="results.php" data-bs-toggle="dropdown" role="button" id="navbarDropdown">Members <i class="fa fa-chevron-down"></i></a>
                             <ul class="dropdown-menu nav-list py-0 dropdown-menu-center" aria-labelledby="navbarDropdown">
                                 <li>
                                     <a class="dropdown-item" href="<?php echo $url;?>membership-types.php">Membership Types</a>
@@ -119,12 +119,6 @@
                                 <li>
                                     <a class="dropdown-item" href="https://forms.gle/soJhtdWtj7BufVLCA" target="_blank">Membership Form</a>
                                 </li>
-                            </ul>
-                        </li>
-
-                        <li class="nav-item dropdown">
-                            <a class="nav-link" href="results.php" data-bs-toggle="dropdown" role="button" id="navbarDropdown">Members <i class="fa fa-chevron-down"></i></a>
-                            <ul class="dropdown-menu nav-list py-0 dropdown-menu-center" aria-labelledby="navbarDropdown">
                                 <li>
                                     <a class="dropdown-item" href="<?php echo $url;?>student-club-members.php">Student Club Members</a>
                                 </li>
