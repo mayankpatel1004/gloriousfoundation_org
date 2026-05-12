@@ -4,6 +4,11 @@
 
 <head>
     <?php include "include/head.php"; ?>
+    <style>
+        .poster-img{
+            width:100px;
+        }
+    </style>
 </head>
 
 <body>
@@ -13,7 +18,7 @@
             <div class="row">
                 <div class="col-lg-7 align-items-center section-padding">
                     <div class="hero-body" data-aos="fade-up">
-                        <h1 class="text-uppercase sub-header">Awards <span class="main_header main_clr sf-heavy"></span>
+                        <h1 class="text-uppercase sub-header">Research <span class="main_header main_clr sf-heavy">Awards</span>
                         </h1>
                     </div>
                 </div>

@@ -54,8 +54,25 @@
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="<?php echo $url;?>">Home</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="<?php echo $url;?>about.php">About Us</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="about.php" data-bs-toggle="dropdown" role="button" id="navbarDropdown">About <i class="fa fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu nav-list py-0 dropdown-menu-center" aria-labelledby="navbarDropdown">
+                                <li>
+                                    <a class="dropdown-item" href="<?php echo $url;?>about.php">About The Foundation</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="<?php echo $url;?>vision-and-mission.php">Vision & Mission</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="<?php echo $url;?>aims-and-objectives.php">Aims & Objectives</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="<?php echo $url;?>board-members.php">Board Members</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="<?php echo $url;?>board-members.php">National & International Centers</a>
+                                </li>
+                            </ul>
                         </li>
                         
                         
@@ -100,7 +117,7 @@
                                     <a class="dropdown-item" href="<?php echo $url;?>membership-privileges.php">Membership Privileges</a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="https://forms.gle/soJhtdWtj7BufVLCA" target="_blank">Payment</a>
+                                    <a class="dropdown-item" href="https://forms.gle/soJhtdWtj7BufVLCA" target="_blank">Membership Form</a>
                                 </li>
                             </ul>
                         </li>
@@ -122,8 +139,16 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="<?php echo $url;?>awards.php">Awards</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="awards.php" data-bs-toggle="dropdown" role="button" id="navbarDropdown">Awards <i class="fa fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu nav-list py-0 dropdown-menu-center" aria-labelledby="navbarDropdown">
+                                <li>
+                                    <a class="dropdown-item" href="<?php echo $url;?>awards.php">Research Awards</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="<?php echo $url;?>academic-awards.php">Academic Award</a>
+                                </li>
+                            </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="https://gloriousjournal.com/" target="_blank">GIJNR Journal</a>

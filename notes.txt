@@ -15,3 +15,15 @@ Current Issue
 Archive 
 
 Above 2 things database is required.
+
+
+12/05/2026 : org
+========================
+About 
+ -> About the foundation (doc file for 3 paragraphs.)
+ -> Vision & Mission (visions, missions)
+ -> Aims & Objectives (Aims and objectives.)
+ -> Members
+ 
+ To verify Fellowships and its submenu items with ginarf.docx.
+ Academic awards content pending.

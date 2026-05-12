@@ -13,7 +13,7 @@
             <div class="row">
                 <div class="col-lg-7 align-items-center section-padding">
                     <div class="hero-body" data-aos="fade-up">
-                        <h1 class="text-uppercase sub-header">About <span class="main_header main_clr sf-heavy">Us</span></h1>
+                        <h1 class="text-uppercase sub-header">About <span class="main_header main_clr sf-heavy">The Foundation</span></h1>
                         <p class="mt-4 w-100 mw-50">Glorious International Nursing Research and Academic Foundation.<br />Registered Under the Ministry of Corporate Affairs, Govt. of India<br />(Enrolled with NGO DARPAN-NITI Aayog, MSME, CSR-1, Certified by ISO 9001:2015)</p>
                     </div>
                 </div>
