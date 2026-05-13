@@ -21,8 +21,8 @@ Above 2 things database is required.
 ========================
 About 
  -> About the foundation (doc file for 3 paragraphs.)
- -> Vision & Mission (visions, missions)
- -> Aims & Objectives (Aims and objectives.)
+ -> Vision & Mission (visions, missions) (Done)
+ -> Aims & Objectives (Aims and objectives.) (Done)
  -> Members
  
  To verify Fellowships and its submenu items with ginarf.docx.

@@ -70,7 +70,7 @@
                                     <a class="dropdown-item" href="<?php echo $url;?>board-members.php">Board Members</a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="<?php echo $url;?>board-members.php">National & International Centers</a>
+                                    <a class="dropdown-item" href="<?php echo $url;?>national-international-center.php">National & International Centers</a>
                                 </li>
                             </ul>
                         </li>
