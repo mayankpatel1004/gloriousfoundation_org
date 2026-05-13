@@ -11,98 +11,120 @@
     <section class="hero">
         <div class="container custom-container-width">
             <div class="row">
-                <div class="col-lg-7 align-items-center section-padding">
+                <div class="col-lg-9 align-items-center section-padding">
                     <div class="hero-body" data-aos="fade-up">
-                        <h1 class="text-uppercase sub-header">About <span class="main_header main_clr sf-heavy">The Foundation</span></h1>
-                        <p class="mt-4 w-100 mw-50">Glorious International Nursing Research and Academic Foundation.<br />Registered Under the Ministry of Corporate Affairs, Govt. of India<br />(Enrolled with NGO DARPAN-NITI Aayog, MSME, CSR-1, Certified by ISO 9001:2015)</p>
+                        <h1 class="text-uppercase sub-header">NATIONAL AND <span
+                                class="main_header main_clr sf-heavy">INTERNATIONAL CENTRES</span></h1>
+                        <p class="mt-4 w-100 mw-50">Glorious International Nursing Research and Academic
+                            Foundation.<br />Registered Under the Ministry of Corporate Affairs, Govt. of
+                            India<br />(Enrolled with NGO DARPAN-NITI Aayog, MSME, CSR-1, Certified by ISO 9001:2015)
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    
+
     <section class="hero2 ml-2">
-    <div class="hero-body container custom-container-width" data-aos="fade-up">
-        <div class="row">
-            <div class="col-lg-12 align-items-center section-padding">
-                    <h3>Aim</h3>
-<p>To promote Nursing research and academically support the Nursing fraternity by collaborating with eminent professionals globally.</p>
+        <div class="hero-body container custom-container-width" data-aos="fade-up">
+            <div class="row">
+                <div class="col-lg-12 align-items-center section-padding">
+                    <div class="container my-4">
 
-<h3>Vision</h3>
-<p>To be a global leading foundation that provides a transformative education to create leaders & innovators in the field of nursing & serves as a catalyst for excellence in nursing education & research.</p>
+                        <div class="container my-4">
 
-<h3>Mission</h3>
-<p>To generate an avenue where new ideas & research flourish.</p>
-<p>To conspire with other academic & research centers across the globe to strengthen the versatility among emerging professionals.</p>
-<p>To create & promote the opportunities for higher education among socially/economically deprived students & remove disparities by encouraging women empowerment.</p>
-<h3>Why GINRA Foundation?</h3>
-<p>To Promote professional & educational advancement of nurses throughout the world.</p>
-<p>To Stimulate & promote evidence-based nursing research, disseminate research findings & encourage the use of new knowledge as a basis for nursing.</p>
-<h3>About Our Foundation</h3>
-<p>Glorious International Nursing Research and Academic (GINRA) Foundation ® is one of the international, non-profitable professional body, registered under the ministry of corporate affairs, Government of India under section 8 of the Companies Act, 2013. GINRA Foundation as a paramount body which acts to bring revolution and sustainable development in the field of Nursing.</p>
-<p>A team of Eminent Teachers, Educationist, and Philanthropists have collectively established GINRA Foundation in 2021 with the aim to promote the Nursing research and academically support the Nursing fraternity by collaborating with the eminent professionals globally. Foundation also provides a platform for the professional leaders, universities, organisations and associations to connect each other with a mission to develop the profession. GINRA foundation also engage in various social service activities towards the community development.</p>
-<p>GINRA Foundation carry out various activities related to the development of academic excellence by webinars, CNEs, Seminars, Conferences and research by research grants to the suitable research proposals.  The foundation intended to publish journals, E-Books, E-Magazines, E-Contents. Foundation motivates the Nurse Researchers, Academicians and Nurse practitioners by awarding degrees/Short term courses, motivates them with awards and recognitions. It also involves in various Social welfare activities.</p>
+                            <div class="row">
+                                <div class="col-12">
 
- 
-<h3>Why GINRA Foundation?</h3>
-<p>Glorious International Nursing Research & Academic Foundation ??</p>
-<p>pexels-fauxels-3184644</p>
-<p>Build the Professional competencies among Nurses and health care professionals through capacity-building programs to meet the global need.</p>
-<p>Impart Research Knowledge through various Continuing Nursing Education / Workshops / Seminar / Conferences.</p>
+                                    <div class="card shadow-sm border-0">
+                                        <div class="card-body">
 
-<p>Promote nursing research through conferring various fellowships for the nursing professionals.</p>
+                                            <h3 class="text-center mb-4">
+                                                National Offices
+                                            </h3>
 
-<p>Provide a platform and assistance in the Conduction of Evidence-Based Nursing/Health Care Research.</p>
+                                            <ul class="list-group list-group-flush">
 
-<p>Promote the social service activities towards the community development and empower the nursing professionals to do such activities.</p>
+                                                <li class="list-group-item">
+                                                    <strong>BANGALORE:</strong>
+                                                    Fortuna Icon, F Block, Sahakaranagara, Bangalore - 560092,
+                                                    Karnataka.
+                                                </li>
 
-<p>Grant short-term courses, certificate courses, vocational courses, and diplomas or recognitions as the company may prescribe or deem fit from time to time.</p>
+                                                <li class="list-group-item">
+                                                    <strong>MANGALORE:</strong>
+                                                    4-115/61 Yashodha Flats, Derebail, Malemar, Ashoka Nagar - 575006,
+                                                    Mangalore, DK, Karnataka.
+                                                </li>
 
-<p>Encourage the nursing professionals by offering honors, awards, recognitions, incentives for their contribution to the nursing profession.</p>
+                                                <li class="list-group-item">
+                                                    <strong>DELHI:</strong>
+                                                    J-505, 5th Floor, Delhi-99, GT Karnal Road, Bhopura, Delhi – NCR
+                                                    201005.
+                                                </li>
 
-<p>Provide various assistance for diploma, undergraduate, and postgraduate nursing students.</p>
+                                                <li class="list-group-item">
+                                                    <strong>UDAIPUR:</strong>
+                                                    No-112, AO Road, Bhupal Pura, Girva, Udaipur, Rajasthan.
+                                                </li>
 
-<p>Conduct collaborative academic and research activities with various Institutes, Universities, Hospitals, and industries.</p>
+                                            </ul>
 
+                                        </div>
+                                    </div>
 
-<p>Advisory Board Members</p>
-<p>Mr. Madan Kumar</p>
-<p>Director</p>
-<p>Dr. Ravindra HN</p>
-<p>Dean</p>
+                                </div>
+                            </div>
 
-<p>Martin Stommer</p>
-<p>Founder / CEO</p>
-<p>Martin is a well-established business coach for 12+ years. His way of coaching and guiding reflects his helpful and friendly nature.</p>
+                        </div>
+                        <div class="container my-4">
 
-<p>Barbara Cooper</p>
-<p>Founder / CEO</p>
-<p>Barbara is an award winning coach who has helped over 25+ businesses start and flourish online. She loves interacting and making friends.</p>
+                            <div class="row">
+                                <div class="col-12">
 
-<p>Jason Ester</p>
-<p>Founder / CEO</p>
-<p>Graduating from one of the top universities and an expert in helping IT businesses grow, Jason has been a friend and guide to many budding entrepreneurs.</p>
-<p>Executive Board Members</p>
-<p>Mr. Nithyananda Mogera</p>
-<p>Senior Nursing Superintendent</p>
-<p>Ms. Nidhi Sharma</p>
-<p>Professor cum</p>
-<p>Vice-Principal</p>
+                                    <div class="card shadow-sm border-0">
+                                        <div class="card-body">
 
-<p>Martin Stommer</p>
-<p>Founder / CEO</p>
-<p>Martin is a well-established business coach for 12+ years. His way of coaching and guiding reflects his helpful and friendly nature.</p>
+                                            <h3 class="text-center mb-4">
+                                                International Offices
+                                            </h3>
 
-<p>Barbara Cooper</p>
-<p>Founder / CEO</p>
-<p>Barbara is an award winning coach who has helped over 25+ businesses start and flourish online. She loves interacting and making friends.</p>
+                                            <ul class="list-group list-group-flush">
 
-<p>Jason Ester</p>
-<p>Founder / CEO</p>
-<p>Graduating from one of the top universities and an expert in helping IT businesses grow, Jason has been a friend and guide to many budding entrepreneurs.</p>
+                                                <li class="list-group-item">
+                                                    <strong>United Kingdom:</strong>
+                                                    81, Grafton Street, Warrington, UK Postcode - WA5 1QA.
+                                                </li>
+
+                                                <li class="list-group-item">
+                                                    <strong>Canada:</strong>
+                                                    20, Bellflower BLVD, Hannon, ON L0R1P0, Canada.
+                                                </li>
+
+                                                <li class="list-group-item">
+                                                    <strong>Ireland:</strong>
+                                                    Flat 3, 33 Nelson Street, Dublin 7, D07P8W3, Ireland.
+                                                </li>
+
+                                                <li class="list-group-item">
+                                                    <strong>USA:</strong>
+                                                    2321, West View Drive, Des Plaines, Illinois - 60018, USA.
+                                                </li>
+
+                                            </ul>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
     </section>
     <?php include 'include/footer.php'; ?>
     <?php include 'include/footerscript.php'; ?>

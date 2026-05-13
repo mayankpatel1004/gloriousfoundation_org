@@ -23,8 +23,8 @@ About
  -> About the foundation (doc file for 3 paragraphs.)
  -> Vision & Mission (visions, missions) (Done)
  -> Aims & Objectives (Aims and objectives.) (Done)
- -> Members
+ -> Members (Done)
  
  To verify Fellowships and its submenu items with ginarf.docx.
  Academic awards content pending.
- -> Address to update on live server.
+ -> Address to update on live server. (Done)
