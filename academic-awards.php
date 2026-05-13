@@ -18,7 +18,7 @@
             <div class="row">
                 <div class="col-lg-7 align-items-center section-padding">
                     <div class="hero-body" data-aos="fade-up">
-                        <h1 class="text-uppercase sub-header">Research <span class="main_header main_clr sf-heavy">Awards</span>
+                        <h1 class="text-uppercase sub-header">Academic <span class="main_header main_clr sf-heavy">Awards</span>
                         </h1>
                     </div>
                 </div>
