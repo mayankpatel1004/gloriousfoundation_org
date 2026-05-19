@@ -72,25 +72,12 @@
                 <table>
                     <thead>
                         <tr>
-                            <th>Fellowship Type</th>
-                            <th>Fee</th>
+                            <th>Fees:</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>GINRAF Senior Nursing Research Fellowship (FGSNR)</td>
-                            <td>Rs.25,000/- (In INR for Indian Members), $ 500 (in USD for Foreign Members)</td>
-                        </tr>
-                        <tr>
-                            <td>GINRAF Post-Doctoral Nursing research Fellowship (FGPDNR)</td>
-                            <td>Rs.25,000/- (In INR for Indian Members), $ 500 (in USD for Foreign Members)</td>
-                        </tr>
-                        <tr>
-                            <td>GINRAF Doctoral Nursing Research Fellowship (FGDNR)</td>
-                            <td>Rs.25,000/- (In INR for Indian Members), $ 500 (in USD for Foreign Members)</td>
-                        </tr>
-                        <tr>
-                            <td>GINRAF Nursing Research Fellowship (FGNR)</td>
+                            <td></td>
                             <td>Rs.25,000/- (In INR for Indian Members), $ 500 (in USD for Foreign Members)</td>
                         </tr>
                     </tbody>
