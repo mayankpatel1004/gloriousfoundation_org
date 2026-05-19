@@ -1,310 +1,352 @@
+<style>
+    .section-title {
+        color: #007bff;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+
+    .custom-list {
+        padding-left: 20px;
+    }
+
+    .custom-list li {
+        list-style-type: disc;
+        margin-bottom: 8px;
+        line-height: 1.6;
+    }
+
+    .award-card {
+        margin-bottom: 20px;
+    }
+
+    .process-box {
+        background: #f8f9fa;
+        border-left: 4px solid #007bff;
+        padding: 15px;
+        border-radius: 4px;
+    }
+
+    .process-step {
+        font-size: 17px;
+        margin-bottom: 8px;
+    }
+</style>
+
 <div class="container my-5">
 
     <div class="card shadow border-0">
 
+        <!-- Header -->
         <div class="card-header bg-primary text-white text-center">
-            <h2 class="mb-1">J K Baria Glorious Academic Awards 2026</h2>
+            <h2 class="mb-2">J K BARIA GLORIOUS RESEARCH AWARDS 2026</h2>
+
             <p class="mb-0">
-                Jointly Presented by<br>
-                Jitubhai Kalubhai Baria Foundation (R) & GINRA Foundation (R)
+                (Jointly Presented by Jitubhai Kalubhai Baria Foundation (R)
+                & GINRA Foundation (R))
             </p>
         </div>
 
         <div class="card-body">
 
-            <!-- About Awards -->
-            <div class="award-section">
-                <h4>About the Awards</h4>
+            <!-- About -->
+            <div class="mb-5">
+                <h4 class="section-title">About the Awards</h4>
 
                 <p>
-                    The J K Baria Glorious Academic Awards 2026 are instituted as a mark of gratitude,
-                    appreciation, and recognition toward outstanding educators, researchers,
-                    academicians, and institutions for their remarkable contributions to research,
-                    innovation, leadership, and academic excellence.
+                    The <strong>J K Baria Glorious Research Awards</strong> are instituted
+                    as a mark of humble gratitude and recognition towards researchers,
+                    educators, and institutions for their outstanding contributions
+                    to research, innovation, and academic excellence.
                 </p>
 
                 <p>
-                    These prestigious awards are jointly presented by Jitubhai Kalubhai Baria Foundation (R)
-                    and Glorious International Nursing Research and Academic (GINRA) Foundation (R),
-                    both registered non-governmental organizations functioning under the Ministry of Corporate Affairs,
-                    Government of India.
+                    These awards are jointly offered by
+                    <strong>Jitubhai Kalubhai Baria Foundation (R)</strong> and
+                    <strong>GINRA Foundation (R)</strong> — both registered
+                    non-governmental organizations working under the Ministry
+                    of Corporate Affairs, Government of India.
                 </p>
 
-                <p>The foundations are actively engaged in:</p>
+                <p>These foundations are actively engaged in:</p>
 
-                <ul>
-                    <li>Promoting academic and research excellence</li>
+                <ul class="custom-list">
+                    <li>Promoting education and research excellence</li>
                     <li>Identifying and nurturing hidden talents across disciplines</li>
-                    <li>Supporting students, faculty, and researchers through academic initiatives</li>
-                    <li>Encouraging innovation and evidence-based practices</li>
-                    <li>Conducting social welfare and community development activities</li>
+                    <li>Supporting students and researchers through academic and social initiatives</li>
+                    <li>Contributing to community development and social welfare activities</li>
                 </ul>
 
                 <p>
-                    Through these awards, the foundations aim to recognize deserving individuals and
-                    institutions and provide them with a global platform for visibility and appreciation.
+                    Through these awards, the foundations aim to identify deserving
+                    individuals and organizations and bring their contributions into
+                    the limelight at a global platform.
                 </p>
             </div>
 
             <!-- Call for Nominations -->
-            <div class="award-section">
-                <h4>Call for Nominations</h4>
-
-                <p>Applications and nominations are invited from:</p>
-
-                <ul>
-                    <li>Faculty Members</li>
-                    <li>Researchers and Scientists</li>
-                    <li>Principals and Academic Leaders</li>
-                    <li>Universities and Educational Institutions</li>
-                    <li>Healthcare Professionals and Allied Disciplines</li>
-                    <li>Scholars and Innovators from various professional fields worldwide</li>
-                </ul>
-            </div>
-
-            <!-- Academic Awards -->
-            <div class="award-section">
-                <h4>Glorious Pride Academic Awards</h4>
+            <div class="mb-5">
+                <h4 class="section-title">Call for Nominations</h4>
 
                 <p>
-                    The awards celebrate academic excellence, leadership, innovation,
-                    and lifelong dedication to education and research.
+                    We warmly invite students, researchers, faculty members,
+                    professionals, and institutions worldwide to submit nominations
+                    for the prestigious awards.
                 </p>
-
-                <!-- Lifetime Achievement -->
-                <div class="card mb-3">
-                    <div class="card-body">
-                        <h5 class="text-primary">Lifetime Achievement Award</h5>
-
-                        <p>
-                            The prestigious Lifetime Achievement Award honors senior academicians and
-                            researchers with exceptional contributions to teaching, research,
-                            leadership, and academic development.
-                        </p>
-
-                        <strong>Eligibility Criteria:</strong>
-
-                        <ul>
-                            <li>Minimum 20 years of academic/research experience</li>
-                            <li>Currently serving as Associate Professor/Professor</li>
-                            <li>Affiliation with University, Government, or Private Institution</li>
-                            <li>More than 25 publications in reputed journals</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Best Principal -->
-                <div class="card mb-3">
-                    <div class="card-body">
-                        <h5 class="text-primary">Best Principal Award</h5>
-
-                        <p>
-                            This award recognizes visionary principals who have demonstrated excellence
-                            in academic leadership, institutional development, administration,
-                            and student empowerment.
-                        </p>
-
-                        <strong>Eligibility Criteria:</strong>
-
-                        <ul>
-                            <li>Principal/Director of a recognized institution</li>
-                            <li>Proven contribution toward academic growth and institutional excellence</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Distinguished Professor -->
-                <div class="card mb-3">
-                    <div class="card-body">
-                        <h5 class="text-primary">Distinguished Professor Award</h5>
-
-                        <p>
-                            The Distinguished Professor Award recognizes academicians with extraordinary
-                            contributions to research, innovation, publications, and academic mentorship.
-                        </p>
-
-                        <strong>Eligibility Criteria:</strong>
-
-                        <ul>
-                            <li>Minimum 25 years of teaching/research experience</li>
-                            <li>Experience equivalent to Assistant/Associate/Professor</li>
-                            <li>More than 40 research publications in reputed journals</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Eminent Faculty -->
-                <div class="card mb-3">
-                    <div class="card-body">
-                        <h5 class="text-primary">Eminent Faculty Award</h5>
-
-                        <p>
-                            This award honors faculty members with exceptional dedication to teaching,
-                            research, innovation, and professional contribution.
-                        </p>
-
-                        <strong>Eligibility Criteria:</strong>
-
-                        <ul>
-                            <li>Minimum 25 years of academic/research experience</li>
-                            <li>Significant scholarly publications and achievements</li>
-                            <li>Strong contribution to academic excellence</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Best Women Faculty -->
-                <div class="card mb-3">
-                    <div class="card-body">
-                        <h5 class="text-primary">Best Women Faculty Award</h5>
-
-                        <p>
-                            Dedicated to recognizing outstanding female academicians for their excellence
-                            in teaching, research, leadership, and academic service.
-                        </p>
-
-                        <strong>Eligibility Criteria:</strong>
-
-                        <ul>
-                            <li>Female faculty member from any recognized institution</li>
-                            <li>Minimum 5 years of academic experience</li>
-                            <li>Contribution toward education and professional advancement</li>
-                        </ul>
-                    </div>
-                </div>
-
             </div>
 
-            <!-- Objectives -->
-            <div class="award-section">
-                <h4>Objectives of the Awards</h4>
+            <!-- Award Categories -->
+            <div class="mb-5">
+                <h4 class="section-title">Award Categories & Eligibility Criteria</h4>
 
-                <ul>
-                    <li>To recognize hidden talents and academic excellence</li>
-                    <li>To encourage quality research and innovation</li>
-                    <li>To motivate educators and institutions toward excellence</li>
-                    <li>To strengthen interdisciplinary collaboration and scholarly engagement</li>
-                    <li>To build a globally connected research and academic community</li>
-                </ul>
+                <!-- Award 1 -->
+                <div class="card award-card">
+                    <div class="card-body">
+                        <h5 class="text-primary">1. Award of Excellence in Research</h5>
+
+                        <ul class="custom-list">
+                            <li>Minimum 5 publications in reputed indexed journals</li>
+                            <li>Demonstrated contribution to scientific research</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Award 2 -->
+                <div class="card award-card">
+                    <div class="card-body">
+                        <h5 class="text-primary">2. Best Women Researcher / Scientist Award</h5>
+
+                        <ul class="custom-list">
+                            <li>Female professionals from academia, industry, or NGOs</li>
+                            <li>Minimum 5 years of research experience</li>
+                            <li>Strong record of publications, patents, fellowships, or innovations</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Award 3 -->
+                <div class="card award-card">
+                    <div class="card-body">
+                        <h5 class="text-primary">3. Best Young Researcher / Scientist Award</h5>
+
+                        <ul class="custom-list">
+                            <li>Maximum age: 35 years</li>
+                            <li>Minimum 3 years of research experience</li>
+                            <li>Publications and innovative research contributions required</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Award 4 -->
+                <div class="card award-card">
+                    <div class="card-body">
+                        <h5 class="text-primary">4. Best Researcher Award</h5>
+
+                        <ul class="custom-list">
+                            <li>Minimum 5 years of research experience</li>
+                            <li>Affiliation with universities, research institutions, industries, or NGOs</li>
+                            <li>Proven record of publications, patents, or research impact</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Award 5 -->
+                <div class="card award-card">
+                    <div class="card-body">
+                        <h5 class="text-primary">5. Best Research Scholar Award</h5>
+
+                        <ul class="custom-list">
+                            <li>Open to Ph.D. scholars / research associates</li>
+                            <li>Must submit proof (Ph.D. registration letter from university)</li>
+                            <li>Evaluation based on thesis quality and research contribution</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Award 6 -->
+                <div class="card award-card">
+                    <div class="card-body">
+                        <h5 class="text-primary">6. Excellent Research Organisation Award</h5>
+
+                        <ul class="custom-list">
+                            <li>Open to institutions/organizations</li>
+                            <li>Commitment to quality research and innovation</li>
+                            <li>Focus on training and skill development</li>
+                            <li>Contribution to the research ecosystem and society</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Award 7 -->
+                <div class="card award-card">
+                    <div class="card-body">
+                        <h5 class="text-primary">7. Best Ph.D. Guide Award</h5>
+
+                        <ul class="custom-list">
+                            <li>Recognized supervisors from universities across disciplines</li>
+                            <li>Based on mentoring excellence and research guidance</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Award 8 -->
+                <div class="card award-card">
+                    <div class="card-body">
+                        <h5 class="text-primary">8. Best PG Dissertation Award</h5>
+
+                        <ul class="custom-list">
+                            <li>For outstanding postgraduate research work</li>
+                            <li>Evaluation based on originality, methodology, and impact</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Award 9 -->
+                <div class="card award-card">
+                    <div class="card-body">
+                        <h5 class="text-primary">9. Best UG Research Project Award</h5>
+
+                        <ul class="custom-list">
+                            <li>For exceptional undergraduate research projects</li>
+                            <li>Focus on innovation, practical application, and creativity</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Award 10 -->
+                <div class="card award-card">
+                    <div class="card-body">
+                        <h5 class="text-primary">10. Emerging Research Leader Award</h5>
+
+                        <ul class="custom-list">
+                            <li>For exceptional young researchers</li>
+                            <li>Focus on innovation, practical application, and creativity</li>
+                        </ul>
+                    </div>
+                </div>
+
             </div>
 
             <!-- Selection Process -->
-            <div class="award-section">
-                <h4>Selection Process</h4>
+            <div class="mb-5">
+                <h4 class="section-title">Selection Process</h4>
 
-                <p>All applications will be reviewed by an expert jury panel.</p>
-
-                <strong>Evaluation Criteria:</strong>
-
-                <ul>
-                    <li>Research Quality</li>
-                    <li>Innovation and Originality</li>
-                    <li>Academic Contributions</li>
-                    <li>Professional Excellence</li>
-                    <li>Societal and Institutional Impact</li>
+                <ul class="custom-list">
+                    <li>All applications will be reviewed by a panel of expert members</li>
+                    <li>Evaluation is based on research quality, innovation, originality, academic, and societal impact</li>
+                    <li>Shortlisted candidates will be notified via email</li>
                 </ul>
-
-                <strong>Selection Procedure:</strong>
-
-                <div class="highlight-box mt-3">
-                    <div class="flow-step">📝 Application Submission</div>
-                    <div class="flow-step">⬇️</div>
-                    <div class="flow-step">🔍 Evaluation by Expert Jury</div>
-                    <div class="flow-step">⬇️</div>
-                    <div class="flow-step">📧 Shortlisting & Email Confirmation</div>
-                    <div class="flow-step">⬇️</div>
-                    <div class="flow-step">💳 Payment of Award Contribution</div>
-                    <div class="flow-step">⬇️</div>
-                    <div class="flow-step">🏆 Dispatch of Award Kit</div>
-                </div>
             </div>
 
             <!-- Fees -->
-            <div class="award-section">
-                <h4>Contribution / Award Fees</h4>
+            <div class="mb-5">
+                <h4 class="section-title">Contribution / Award Fees</h4>
 
                 <p>
-                    The organizing foundations are non-profit organizations and utilize contributions
-                    to support educational and social initiatives.
+                    To support the initiatives and social activities of the foundations:
                 </p>
 
-                <strong>Contribution Details:</strong>
-
-                <ul>
+                <ul class="custom-list">
                     <li>Individual Awards: ₹3,000 – ₹5,000</li>
-                    <li>Contribution is applicable only for selected nominees.</li>
+                    <li>Contributions are collected only from selected nominees</li>
                 </ul>
             </div>
 
             <!-- Social Impact -->
-            <div class="award-section">
-                <h4>Social Impact Statement</h4>
+            <div class="mb-5">
+                <h4 class="section-title">Social Impact Statement</h4>
 
-                <p>The contributions received through the awards are utilized for:</p>
+                <p>
+                    The organising foundations operate as non-profit organisations
+                    and do not have independent revenue sources.
+                </p>
 
-                <ul>
+                <p>The contributions received through these awards are utilised for:</p>
+
+                <ul class="custom-list">
                     <li>Student support initiatives</li>
-                    <li>Research promotion activities</li>
-                    <li>Academic development programs</li>
-                    <li>Educational awareness campaigns</li>
-                    <li>Community welfare and social service activities</li>
+                    <li>Educational and research promotion activities</li>
+                    <li>Social welfare and community development programs</li>
                 </ul>
 
-                <p>This creates a meaningful and mutually beneficial opportunity where:</p>
+                <p>This creates a mutually beneficial (win–win) opportunity:</p>
 
-                <ul>
-                    <li>Awardees receive recognition and visibility</li>
-                    <li>Contributions support social and educational causes</li>
+                <ul class="custom-list">
+                    <li>Awardees gain recognition and visibility</li>
+                    <li>Contributions directly support meaningful social causes</li>
                 </ul>
+
+                <p>
+                    The award consists of an E-certificate, a certificate,
+                    and a plaque, which will be sent by post.
+                </p>
             </div>
 
-            <!-- Award Package -->
-            <div class="award-section">
-                <h4>Award Package Includes</h4>
+            <!-- Vision -->
+            <div class="mb-5">
+                <h4 class="section-title">Vision</h4>
 
-                <p>Selected awardees will receive:</p>
-
-                <ul>
-                    <li>E-Certificate</li>
-                    <li>Printed Certificate</li>
-                    <li>Premium Award Plaque/Trophy</li>
-                    <li>Official Recognition from the Foundations</li>
-                </ul>
-
-                <p>📦 Certificates and plaques will be dispatched via post.</p>
-            </div>
-
-            <!-- Disclaimer -->
-            <div class="award-section">
-                <h4>Disclaimer</h4>
-
-                <div class="alert alert-warning">
-                    The J K Baria Glorious Academic Awards aim to promote academic excellence,
-                    innovation, and research quality. All applications will be evaluated fairly
-                    by an expert review panel based on merit, originality, and relevance.
-                    <br><br>
-                    The organizers reserve the right to accept or reject any application without assigning any reason.
-                    Any form of plagiarism, falsification, or academic misconduct will lead to immediate disqualification.
-                    The decision of the jury shall be final and binding.
+                <div class="alert alert-info">
+                    To encourage, recognize, and celebrate hidden talents in
+                    research and academia, and to build a stronger, more impactful
+                    global research community.
                 </div>
             </div>
 
-            <!-- Contact -->
-            <div class="award-section">
-                <h4>Contact & Communication</h4>
+            <!-- Disclaimer -->
+            <div class="mb-5">
+                <h4 class="section-title">Disclaimer</h4>
 
-                <p>
-                    For nominations, collaborations, and queries, kindly contact the organizing team.
+                <div class="alert alert-warning">
+                    The J K Baria Glorious Research Awards aim to promote academic
+                    excellence and innovation. All entries will be assessed by
+                    an expert review panel based on merit, originality, and relevance.
+                    <br><br>
+
+                    The organizers reserve the right to accept or reject any application
+                    without assigning a reason. Any form of academic misconduct,
+                    including plagiarism or falsification of data, will result in
+                    immediate disqualification.
+                    <br><br>
+
+                    The decision of the jury shall be final and binding.
+                    The organizers hold no liability for any disputes arising
+                    from the selection process.
+                </div>
+            </div>
+
+            <!-- Application Process -->
+            <div class="mb-5">
+                <h4 class="section-title">Application & Selection Process</h4>
+
+                <div class="process-box">
+                    <div class="process-step">📝 Apply via Google Form</div>
+                    <div class="process-step">⬇️</div>
+
+                    <div class="process-step">🔍 Evaluation by Expert Jury</div>
+                    <div class="process-step">⬇️</div>
+
+                    <div class="process-step">📧 Shortlisting & Email Confirmation</div>
+                    <div class="process-step">⬇️</div>
+
+                    <div class="process-step">💳 Payment of Award Contribution</div>
+                    <div class="process-step">⬇️</div>
+
+                    <div class="process-step">
+                        🏆 Award Dispatch
+                        (E-Certificate + Certificate + Plaque by Post)
+                    </div>
+                </div>
+            </div>
+
+            <!-- Apply Button -->
+            <div class="text-center">
+                <p class="font-italic mb-4">
+                    “Celebrating Talent. Inspiring Innovation. Shaping Global Research.”
                 </p>
 
-                <p>
-                    Together, let us celebrate excellence, inspire innovation,
-                    and build a stronger global academic community.
-                </p>
-
-                <a href="https://forms.gle/aDFZzg5pGXjbfQx9A"
+                <a href="https://forms.gle/fAUeE9FFu7BgparGA"
                    target="_blank"
-                   class="btn btn-primary">
+                   class="btn btn-primary btn-lg">
                     Apply Now
                 </a>
             </div>
