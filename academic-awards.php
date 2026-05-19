@@ -72,7 +72,7 @@
 
                 <div class="card-header bg-secondary text-white text-center">
                     <h2 class="mb-1">J K Baria Glorious Academic Awards 2026</h2>
-                    <p class="mb-0">Jointly Presented by Jitubhai Kalubhai Baria Foundation (R) & GINRA Foundation (R)
+                    <p class="mb-0">(Jointly Presented by Jitubhai Kalubhai Baria Foundation (R) & GINRA Foundation (R))
                     </p>
                 </div>
 
