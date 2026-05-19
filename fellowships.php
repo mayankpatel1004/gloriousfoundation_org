@@ -80,9 +80,15 @@
                             <td></td>
                             <td>Rs.25,000/- (In INR for Indian Members), $ 500 (in USD for Foreign Members)</td>
                         </tr>
+                        <tr>
+                            <td colspan="2" class="text-center"><br /><br /><a href="https://forms.gle/LWbooNF6dTHPL7xW7" class="ml-3" target="_blank">Use this link/QR scanner to apply.</a></td>
+                        </tr>
                     </tbody>
                 </table>
             </div>
+        </div>
+        <div>
+            
         </div>
         <div>
             <img src="<?php echo $url;?>images/fellowship.jpeg" style="width:300px;" />
