@@ -67,7 +67,7 @@
 
                     <!-- Header -->
                     <div class="card-header bg-secondary text-white text-center">
-                        <h2 class="mb-2">J K BARIA GLORIOUS RESEARCH AWARDS 2026</h2>
+                        <h3 class="mb-2">J K Baria Glorious Research Awards 2026</h3>
 
                         <p class="mb-0">
                             (Jointly Presented by Jitubhai Kalubhai Baria Foundation (R)
