@@ -24,18 +24,13 @@
     <div class="hero-body container custom-container-width" data-aos="fade-up">
         <div class="row">
             <div class="col-lg-12 align-items-center section-padding">
+
+                <p><b>Fellowship of GINRAF Senior Nursing Research (FGSNR):</b> are awarded to eminent nursing professionals above the age of 60 years, who have a Master's degree from a recognized university with a first-class and have vast professional experience, guided/evaluated several Master's Thesis, conducted quality research work, publications and papers in professional journals.</p>
                 
-                <h3>Continuing Nursing Education (CNE)</h3>
-                <p>GINRA foundation offers/awards fellowships to scholars who are at various levels in their profession. These fellowships are offers/awards to the members of the Foundation.</p>
+                <p><b>Fellowship of GINRAF Doctoral Nursing Research (FGDNR):</b> are open to doctoral students, preferably young researchers, who have a Master's degree from a recognized university with a first-class and are registered for a doctoral degree in Nursing under any reputed university.</p>
+                <p><b>Fellowship of Glorious International Nursing Research and Academic Foundation (FGINRAF): </b>are open to any working Nursing professional with a minimum degree qualification, who holds valid membership of GINRAF. They shall join and work on the scientific and technical committees of the foundation and obtain professional growth and development. On completion of the required assignments (Research, Publication, participation, and conduction of CNE/workshop/conferences and other technical and scientific) candidate shall be honored with the fellowship.</p>
 
-                <p>Various fellowships bands are:</p>
-
-                <p>Fellowship of GINRAF Senior Nursing Research (FGSNR): are awarded to eminent nursing professionals above the age of 60 years, who have a Master's degree from a recognized university with a first-class and have vast professional experience, guided/evaluated several Master's Thesis, conducted quality research work, publications and papers in professional journals.</p>
-                <p>Fellowship of GINRAF Post-Doctoral Nursing Research (FGPDNR): are awarded to eminent faculty who have completed their Ph.D. in Nursing from a recognized university, who have shown significant competence in research work at the time of their application.</p>
-                <p>Fellowship of GINRAF Doctoral Nursing Research (FGDNR): are open to doctoral students, preferably young researchers, who have a Master's degree from a recognized university with a first-class and are registered for a doctoral degree in Nursing under any reputed university.</p>
-                <p>Fellowship of Glorious International Nursing Research and Academic Foundation (FGINRAF): are open to any working Nursing professional with a minimum degree qualification, who holds valid membership of GINRAF. They shall join and work on the scientific and technical committees of the foundation and obtain professional growth and development. On completion of the required assignments (Research, Publication, participation, and conduction of CNE/workshop/conferences and other technical and scientific) candidate shall be honored with the fellowship.</p>
-
-                <p>Eligibility for FGINRAF nomination:</p>
+                <p><b>Eligibility for FGINRAF nomination:</b></p>
                 <ul>
                     <li>Member of GINRAF.</li>
                     <li>Working as a faculty/Staff in a reputed institution.</li>
@@ -46,7 +41,7 @@
                     <li>Download the fellowship application:</li>
                 </ul>
 
-                <p>Benefits of the Fellowship:</p>
+                <p><b>Benefits of the Fellowship:</b></p>
 
                 <ul>
                     <li>Fellow Members will be given a prestigious certificate regarding the fellowship, essential for one's academic enhancement.</li>
@@ -61,7 +56,7 @@
                 </ul>
 
 
-                <p>The fellowship Evaluation Process:</p>
+                <p><b>The fellowship Evaluation Process:</b></p>
 
                 <ul>
                     <li>Application for the fellowship can be submitted online by filling the application form and uploading the required documents.</li>
@@ -70,9 +65,8 @@
                 </ul>
 
 
-                <p>Fellowship Fee:</p>
+                <p><b>Fellowship Fee:</b></p>
 
-                <p>The foundation has many proposals to carry out for the welfare of the Nursing fraternity, however, it doesn't have any income source. Therefore, the foundation needs to defray its maintenance and activities costs by collecting Fellowship fees.</p>
                 <p>The foundation has many proposals to carry out for the welfare of the Nursing fraternity, however, it doesn't have any income source. Therefore, the foundation needs to defray its maintenance and activities costs by collecting Fellowship fees.</p>
 
                 <table>
@@ -103,7 +97,11 @@
                 </table>
             </div>
         </div>
+        <div>
+            <img src="<?php echo $url;?>images/fellowship.jpeg" style="width:300px;" />
+        </div>
     </div>
+    
     </section>
     <?php include 'include/footer.php'; ?>
     <?php include 'include/footerscript.php'; ?>
