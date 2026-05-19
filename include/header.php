@@ -120,9 +120,6 @@
                                     <a class="dropdown-item" href="https://forms.gle/soJhtdWtj7BufVLCA" target="_blank">Membership Form</a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="<?php echo $url;?>student-club-members.php">Student Club Members</a>
-                                </li>
-                                <li>
                                     <a class="dropdown-item" href="<?php echo $url;?>faculty-club-members.php">Faculty Club Members</a>
                                 </li>
                                 <li>
