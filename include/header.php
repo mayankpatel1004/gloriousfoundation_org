@@ -125,9 +125,6 @@
                                 <li>
                                     <a class="dropdown-item" href="<?php echo $url;?>achievers-club-members.php">Achievers Club Members</a>
                                 </li>
-                                <li>
-                                    <a class="dropdown-item" href="<?php echo $url;?>institute-university-hospital-industrial-members.php">Institute University Hospital Industrial Members</a>
-                                </li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
