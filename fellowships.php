@@ -81,7 +81,7 @@
                             <td>Rs.25,000/- (In INR for Indian Members), $ 500 (in USD for Foreign Members)</td>
                         </tr>
                         <tr>
-                            <td colspan="2" class="text-center"><br /><br /><a href="https://forms.gle/LWbooNF6dTHPL7xW7" class="ml-3" target="_blank">Use this link/QR scanner to apply.</a></td>
+                            <td colspan="2" class="text-center"><br /><br /><a href="https://forms.gle/LWbooNF6dTHPL7xW7" class="ml-3" target="_blank">Click here/QR scanner to apply.</a></td>
                         </tr>
                     </tbody>
                 </table>
