@@ -1,3 +1,4 @@
+
 <style>
     .section-title {
         color: #007bff;
@@ -15,8 +16,8 @@
         line-height: 1.6;
     }
 
-    .award-card {
-        margin-bottom: 20px;
+    .fellowship-card {
+        margin-bottom: 25px;
     }
 
     .process-box {
@@ -30,6 +31,11 @@
         font-size: 17px;
         margin-bottom: 8px;
     }
+
+    .table th {
+        background: #007bff;
+        color: #fff;
+    }
 </style>
 
 <div class="container my-5">
@@ -38,319 +44,396 @@
 
         <!-- Header -->
         <div class="card-header bg-primary text-white text-center">
-            <h2 class="mb-2">J K BARIA GLORIOUS RESEARCH AWARDS 2026</h2>
+            <h2 class="mb-2">GINRA FOUNDATION FELLOWSHIP PROGRAMS</h2>
 
             <p class="mb-0">
-                (Jointly Presented by Jitubhai Kalubhai Baria Foundation (R)
-                & GINRA Foundation (R))
+                Glorious International Nursing Research and Academic (GINRA) Foundation®
             </p>
         </div>
 
         <div class="card-body">
 
-            <!-- About -->
+            <!-- Introduction -->
             <div class="mb-5">
-                <h4 class="section-title">About the Awards</h4>
+                <h4 class="section-title">Introduction</h4>
 
                 <p>
-                    The <strong>J K Baria Glorious Research Awards</strong> are instituted
-                    as a mark of humble gratitude and recognition towards researchers,
-                    educators, and institutions for their outstanding contributions
-                    to research, innovation, and academic excellence.
+                    Glorious International Nursing Research and Academic (GINRA) Foundation®
+                    offers prestigious fellowship programs with the vision of recognizing,
+                    motivating, and honoring nursing academicians, professionals,
+                    researchers, administrators, educators, and healthcare leaders.
                 </p>
 
                 <p>
-                    These awards are jointly offered by
-                    <strong>Jitubhai Kalubhai Baria Foundation (R)</strong> and
-                    <strong>GINRA Foundation (R)</strong> — both registered
-                    non-governmental organizations working under the Ministry
-                    of Corporate Affairs, Government of India.
+                    The fellowship programs are honorary professional recognitions awarded
+                    purely on the basis of achievements, academic excellence,
+                    research output, leadership qualities, innovations,
+                    and professional service.
                 </p>
 
-                <p>These foundations are actively engaged in:</p>
+                <p>
+                    These fellowships are non-curricular in nature and do not involve:
+                </p>
 
                 <ul class="custom-list">
-                    <li>Promoting education and research excellence</li>
-                    <li>Identifying and nurturing hidden talents across disciplines</li>
-                    <li>Supporting students and researchers through academic and social initiatives</li>
-                    <li>Contributing to community development and social welfare activities</li>
+                    <li>Coursework</li>
+                    <li>Assignments</li>
+                    <li>Examinations</li>
+                    <li>Training Modules</li>
                 </ul>
 
                 <p>
-                    Through these awards, the foundations aim to identify deserving
-                    individuals and organizations and bring their contributions into
-                    the limelight at a global platform.
+                    Selection is based on expert evaluation of CV,
+                    research contributions, publications, professional experience,
+                    leadership roles, awards, and overall contribution
+                    to nursing and healthcare.
                 </p>
             </div>
 
-            <!-- Call for Nominations -->
-            <div class="mb-5">
-                <h4 class="section-title">Call for Nominations</h4>
+            <!-- Fellowship 1 -->
+            <div class="card fellowship-card">
+                <div class="card-body">
 
-                <p>
-                    We warmly invite students, researchers, faculty members,
-                    professionals, and institutions worldwide to submit nominations
-                    for the prestigious awards.
-                </p>
+                    <h4 class="text-primary">
+                        1. Fellowship in Nursing Education Excellence (FGNEE)
+                    </h4>
+
+                    <h5>Description</h5>
+
+                    <p>
+                        Recognizes distinguished nursing educators who have demonstrated
+                        exceptional contributions to teaching, curriculum innovation,
+                        mentorship, academic leadership, and educational advancement.
+                    </p>
+
+                    <h5>Eligibility</h5>
+
+                    <ul class="custom-list">
+                        <li>Registered Nursing professional</li>
+                        <li>Minimum 10 years of teaching/academic experience</li>
+                        <li>Working in a reputed educational institution</li>
+                        <li>Contribution toward nursing education and faculty development</li>
+                        <li>Publications and academic achievements preferred</li>
+                    </ul>
+
+                    <h5>Advantages</h5>
+
+                    <ul class="custom-list">
+                        <li>Authorization to use “FGNEE” as professional suffix</li>
+                        <li>Professional recognition and fellowship certificate</li>
+                        <li>Academic networking opportunities</li>
+                        <li>Enhanced academic visibility</li>
+                    </ul>
+
+                </div>
             </div>
 
-            <!-- Award Categories -->
-            <div class="mb-5">
-                <h4 class="section-title">Award Categories & Eligibility Criteria</h4>
+            <!-- Fellowship 2 -->
+            <div class="card fellowship-card">
+                <div class="card-body">
 
-                <!-- Award 1 -->
-                <div class="card award-card">
-                    <div class="card-body">
-                        <h5 class="text-primary">1. Award of Excellence in Research</h5>
+                    <h4 class="text-primary">
+                        2. Fellowship in Clinical Nursing Excellence (FGCNE)
+                    </h4>
 
-                        <ul class="custom-list">
-                            <li>Minimum 5 publications in reputed indexed journals</li>
-                            <li>Demonstrated contribution to scientific research</li>
-                        </ul>
-                    </div>
+                    <h5>Description</h5>
+
+                    <p>
+                        Honors nursing professionals who have demonstrated excellence
+                        in clinical practice, patient care, healthcare quality improvement,
+                        and evidence-based nursing interventions.
+                    </p>
+
+                    <h5>Eligibility</h5>
+
+                    <ul class="custom-list">
+                        <li>Registered Nursing professional</li>
+                        <li>Minimum 8 years of clinical experience</li>
+                        <li>Working in a hospital or healthcare institution</li>
+                        <li>Contribution toward patient care and clinical excellence</li>
+                    </ul>
+
+                    <h5>Advantages</h5>
+
+                    <ul class="custom-list">
+                        <li>Authorization to use “FGCNE” as professional suffix</li>
+                        <li>Recognition of clinical expertise</li>
+                        <li>Healthcare leadership opportunities</li>
+                        <li>Professional networking opportunities</li>
+                    </ul>
+
                 </div>
+            </div>
 
-                <!-- Award 2 -->
-                <div class="card award-card">
-                    <div class="card-body">
-                        <h5 class="text-primary">2. Best Women Researcher / Scientist Award</h5>
+            <!-- Fellowship 3 -->
+            <div class="card fellowship-card">
+                <div class="card-body">
 
-                        <ul class="custom-list">
-                            <li>Female professionals from academia, industry, or NGOs</li>
-                            <li>Minimum 5 years of research experience</li>
-                            <li>Strong record of publications, patents, fellowships, or innovations</li>
-                        </ul>
-                    </div>
+                    <h4 class="text-primary">
+                        3. Fellowship in Nursing Administration and Leadership (FGNAL)
+                    </h4>
+
+                    <p>
+                        Awarded to visionary nursing administrators, deans,
+                        principals, and healthcare leaders for excellence
+                        in leadership and institutional development.
+                    </p>
+
+                    <h5>Eligibility</h5>
+
+                    <ul class="custom-list">
+                        <li>Minimum 10 years of leadership experience</li>
+                        <li>Administrative or leadership position</li>
+                        <li>Affiliation with reputed institution</li>
+                    </ul>
+
+                    <h5>Advantages</h5>
+
+                    <ul class="custom-list">
+                        <li>Professional recognition in leadership</li>
+                        <li>Participation in policy discussions</li>
+                        <li>Enhanced institutional reputation</li>
+                    </ul>
+
                 </div>
+            </div>
 
-                <!-- Award 3 -->
-                <div class="card award-card">
-                    <div class="card-body">
-                        <h5 class="text-primary">3. Best Young Researcher / Scientist Award</h5>
+            <!-- Fellowship 4 -->
+            <div class="card fellowship-card">
+                <div class="card-body">
 
-                        <ul class="custom-list">
-                            <li>Maximum age: 35 years</li>
-                            <li>Minimum 3 years of research experience</li>
-                            <li>Publications and innovative research contributions required</li>
-                        </ul>
-                    </div>
+                    <h4 class="text-primary">
+                        4. Fellowship in Community and Public Health Nursing (FGCPHN)
+                    </h4>
+
+                    <p>
+                        Recognizes professionals involved in community health services,
+                        preventive healthcare, and public health awareness initiatives.
+                    </p>
+
+                    <h5>Eligibility</h5>
+
+                    <ul class="custom-list">
+                        <li>Minimum 8 years of public/community health experience</li>
+                        <li>Contribution toward healthcare awareness</li>
+                        <li>Involvement in social welfare activities</li>
+                    </ul>
+
+                    <h5>Advantages</h5>
+
+                    <ul class="custom-list">
+                        <li>Recognition for community service contributions</li>
+                        <li>Public health networking opportunities</li>
+                        <li>Participation in outreach programs</li>
+                    </ul>
+
                 </div>
+            </div>
 
-                <!-- Award 4 -->
-                <div class="card award-card">
-                    <div class="card-body">
-                        <h5 class="text-primary">4. Best Researcher Award</h5>
+            <!-- Fellowship 5 -->
+            <div class="card fellowship-card">
+                <div class="card-body">
 
-                        <ul class="custom-list">
-                            <li>Minimum 5 years of research experience</li>
-                            <li>Affiliation with universities, research institutions, industries, or NGOs</li>
-                            <li>Proven record of publications, patents, or research impact</li>
-                        </ul>
-                    </div>
+                    <h4 class="text-primary">
+                        5. Fellowship in Nursing Research (FGNR)
+                    </h4>
+
+                    <p>
+                        Awarded to nursing professionals and academicians
+                        demonstrating excellence in scientific research,
+                        innovation, and scholarly contribution.
+                    </p>
+
+                    <h5>Eligibility</h5>
+
+                    <ul class="custom-list">
+                        <li>Minimum 5 years of research experience</li>
+                        <li>Publications in reputed journals preferred</li>
+                        <li>Participation in conferences and academic activities</li>
+                    </ul>
+
+                    <h5>Advantages</h5>
+
+                    <ul class="custom-list">
+                        <li>Recognition as nursing research fellow</li>
+                        <li>Research collaboration opportunities</li>
+                        <li>Enhanced scholarly visibility</li>
+                    </ul>
+
                 </div>
+            </div>
 
-                <!-- Award 5 -->
-                <div class="card award-card">
-                    <div class="card-body">
-                        <h5 class="text-primary">5. Best Research Scholar Award</h5>
+            <!-- Fellowship 6 -->
+            <div class="card fellowship-card">
+                <div class="card-body">
 
-                        <ul class="custom-list">
-                            <li>Open to Ph.D. scholars / research associates</li>
-                            <li>Must submit proof (Ph.D. registration letter from university)</li>
-                            <li>Evaluation based on thesis quality and research contribution</li>
-                        </ul>
-                    </div>
+                    <h4 class="text-primary">
+                        6. Fellowship of GINRAF Senior Nursing Research (FGSNR)
+                    </h4>
+
+                    <p>
+                        One of the highest recognitions offered to senior nursing
+                        academicians and researchers for lifelong contributions.
+                    </p>
+
+                    <h5>Eligibility</h5>
+
+                    <ul class="custom-list">
+                        <li>Above 60 years of age</li>
+                        <li>Master’s degree in Nursing with first-class</li>
+                        <li>Vast academic and professional experience</li>
+                    </ul>
+
+                    <h5>Advantages</h5>
+
+                    <ul class="custom-list">
+                        <li>Prestigious recognition from GINRA Foundation</li>
+                        <li>Global academic visibility</li>
+                        <li>Advisory and mentorship opportunities</li>
+                    </ul>
+
                 </div>
+            </div>
 
-                <!-- Award 6 -->
-                <div class="card award-card">
-                    <div class="card-body">
-                        <h5 class="text-primary">6. Excellent Research Organisation Award</h5>
+            <!-- Fellowship 7 -->
+            <div class="card fellowship-card">
+                <div class="card-body">
 
-                        <ul class="custom-list">
-                            <li>Open to institutions/organizations</li>
-                            <li>Commitment to quality research and innovation</li>
-                            <li>Focus on training and skill development</li>
-                            <li>Contribution to the research ecosystem and society</li>
-                        </ul>
-                    </div>
+                    <h4 class="text-primary">
+                        7. Fellowship of GINRAF Doctoral Nursing Research (FGDNR)
+                    </h4>
+
+                    <p>
+                        Awarded to doctoral scholars and emerging researchers
+                        pursuing Ph.D. in Nursing.
+                    </p>
+
+                    <h5>Eligibility</h5>
+
+                    <ul class="custom-list">
+                        <li>Registered Ph.D. scholar in Nursing</li>
+                        <li>Master’s degree in Nursing with first-class</li>
+                        <li>Active involvement in research activities</li>
+                    </ul>
+
+                    <h5>Advantages</h5>
+
+                    <ul class="custom-list">
+                        <li>Recognition as doctoral research fellow</li>
+                        <li>Mentorship from senior academicians</li>
+                        <li>Conference and publication opportunities</li>
+                    </ul>
+
                 </div>
-
-                <!-- Award 7 -->
-                <div class="card award-card">
-                    <div class="card-body">
-                        <h5 class="text-primary">7. Best Ph.D. Guide Award</h5>
-
-                        <ul class="custom-list">
-                            <li>Recognized supervisors from universities across disciplines</li>
-                            <li>Based on mentoring excellence and research guidance</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Award 8 -->
-                <div class="card award-card">
-                    <div class="card-body">
-                        <h5 class="text-primary">8. Best PG Dissertation Award</h5>
-
-                        <ul class="custom-list">
-                            <li>For outstanding postgraduate research work</li>
-                            <li>Evaluation based on originality, methodology, and impact</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Award 9 -->
-                <div class="card award-card">
-                    <div class="card-body">
-                        <h5 class="text-primary">9. Best UG Research Project Award</h5>
-
-                        <ul class="custom-list">
-                            <li>For exceptional undergraduate research projects</li>
-                            <li>Focus on innovation, practical application, and creativity</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Award 10 -->
-                <div class="card award-card">
-                    <div class="card-body">
-                        <h5 class="text-primary">10. Emerging Research Leader Award</h5>
-
-                        <ul class="custom-list">
-                            <li>For exceptional young researchers</li>
-                            <li>Focus on innovation, practical application, and creativity</li>
-                        </ul>
-                    </div>
-                </div>
-
             </div>
 
             <!-- Selection Process -->
             <div class="mb-5">
-                <h4 class="section-title">Selection Process</h4>
-
-                <ul class="custom-list">
-                    <li>All applications will be reviewed by a panel of expert members</li>
-                    <li>Evaluation is based on research quality, innovation, originality, academic, and societal impact</li>
-                    <li>Shortlisted candidates will be notified via email</li>
-                </ul>
-            </div>
-
-            <!-- Fees -->
-            <div class="mb-5">
-                <h4 class="section-title">Contribution / Award Fees</h4>
-
-                <p>
-                    To support the initiatives and social activities of the foundations:
-                </p>
-
-                <ul class="custom-list">
-                    <li>Individual Awards: ₹3,000 – ₹5,000</li>
-                    <li>Contributions are collected only from selected nominees</li>
-                </ul>
-            </div>
-
-            <!-- Social Impact -->
-            <div class="mb-5">
-                <h4 class="section-title">Social Impact Statement</h4>
-
-                <p>
-                    The organising foundations operate as non-profit organisations
-                    and do not have independent revenue sources.
-                </p>
-
-                <p>The contributions received through these awards are utilised for:</p>
-
-                <ul class="custom-list">
-                    <li>Student support initiatives</li>
-                    <li>Educational and research promotion activities</li>
-                    <li>Social welfare and community development programs</li>
-                </ul>
-
-                <p>This creates a mutually beneficial (win–win) opportunity:</p>
-
-                <ul class="custom-list">
-                    <li>Awardees gain recognition and visibility</li>
-                    <li>Contributions directly support meaningful social causes</li>
-                </ul>
-
-                <p>
-                    The award consists of an E-certificate, a certificate,
-                    and a plaque, which will be sent by post.
-                </p>
-            </div>
-
-            <!-- Vision -->
-            <div class="mb-5">
-                <h4 class="section-title">Vision</h4>
-
-                <div class="alert alert-info">
-                    To encourage, recognize, and celebrate hidden talents in
-                    research and academia, and to build a stronger, more impactful
-                    global research community.
-                </div>
-            </div>
-
-            <!-- Disclaimer -->
-            <div class="mb-5">
-                <h4 class="section-title">Disclaimer</h4>
-
-                <div class="alert alert-warning">
-                    The J K Baria Glorious Research Awards aim to promote academic
-                    excellence and innovation. All entries will be assessed by
-                    an expert review panel based on merit, originality, and relevance.
-                    <br><br>
-
-                    The organizers reserve the right to accept or reject any application
-                    without assigning a reason. Any form of academic misconduct,
-                    including plagiarism or falsification of data, will result in
-                    immediate disqualification.
-                    <br><br>
-
-                    The decision of the jury shall be final and binding.
-                    The organizers hold no liability for any disputes arising
-                    from the selection process.
-                </div>
-            </div>
-
-            <!-- Application Process -->
-            <div class="mb-5">
-                <h4 class="section-title">Application & Selection Process</h4>
+                <h4 class="section-title">Fellowship Selection Process</h4>
 
                 <div class="process-box">
-                    <div class="process-step">📝 Apply via Google Form</div>
-                    <div class="process-step">⬇️</div>
 
-                    <div class="process-step">🔍 Evaluation by Expert Jury</div>
-                    <div class="process-step">⬇️</div>
+                    <div class="process-step">
+                        📝 Submission of Fellowship Application Form
+                    </div>
 
-                    <div class="process-step">📧 Shortlisting & Email Confirmation</div>
-                    <div class="process-step">⬇️</div>
-
-                    <div class="process-step">💳 Payment of Award Contribution</div>
                     <div class="process-step">⬇️</div>
 
                     <div class="process-step">
-                        🏆 Award Dispatch
-                        (E-Certificate + Certificate + Plaque by Post)
+                        📄 Submission of CV and Supporting Documents
                     </div>
+
+                    <div class="process-step">⬇️</div>
+
+                    <div class="process-step">
+                        🔍 Evaluation by Expert Advisory and Review Committee
+                    </div>
+
+                    <div class="process-step">⬇️</div>
+
+                    <div class="process-step">
+                        📧 Shortlisting and Selection Notification via Email
+                    </div>
+
+                    <div class="process-step">⬇️</div>
+
+                    <div class="process-step">
+                        💳 Payment of Fellowship Fee
+                    </div>
+
+                    <div class="process-step">⬇️</div>
+
+                    <div class="process-step">
+                        🏅 Award of Fellowship Certificate and Recognition
+                    </div>
+
                 </div>
             </div>
 
-            <!-- Apply Button -->
-            <div class="text-center">
-                <p class="font-italic mb-4">
-                    “Celebrating Talent. Inspiring Innovation. Shaping Global Research.”
-                </p>
+            <!-- Fee Structure -->
+            <div class="mb-5">
 
-                <a href="https://forms.gle/fAUeE9FFu7BgparGA"
-                   target="_blank"
+                <h4 class="section-title">Fellowship Fee Structure</h4>
+
+                <div class="table-responsive">
+
+                    <table class="table table-bordered">
+
+                        <thead>
+                            <tr>
+                                <th>Fellowship Category</th>
+                                <th>Indian Applicants</th>
+                                <th>International Applicants</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>All Fellowship Categories</td>
+                                <td>₹25,000/- INR</td>
+                                <td>$300 USD</td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+                <div class="alert alert-success">
+                    ✔ Existing GINRA Foundation Members are eligible
+                    for a 50% concession on fellowship fees.
+                </div>
+
+            </div>
+
+            <!-- Declaration -->
+            <div class="mb-5">
+
+                <h4 class="section-title">Declaration</h4>
+
+                <ul class="custom-list">
+                    <li>The fellowship is honorary and non-curricular in nature</li>
+                    <li>No coursework, assignments, or examinations are involved</li>
+                    <li>Accurate information and authentic documents are mandatory</li>
+                    <li>Academic misconduct may lead to rejection or cancellation</li>
+                    <li>The review committee’s decision shall be final and binding</li>
+                </ul>
+
+            </div>
+
+            <!-- Apply -->
+            <div class="text-center">
+
+                <h4 class="section-title">Apply for Fellowship</h4>
+
+                <a href="#"
                    class="btn btn-primary btn-lg">
                     Apply Now
                 </a>
+
             </div>
 
         </div>
     </div>
+
 </div>
