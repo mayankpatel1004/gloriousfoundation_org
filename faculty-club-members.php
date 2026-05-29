@@ -327,7 +327,10 @@
                                         education, and evidence-based practice</li>
 
                                 </ul>
-                                <h3><i class="fas fa-clipboard-list text-primary mr-2"></i> Application Process</h3>
+                                <div class="card-header bg-secondary text-white">
+                                <h4 class="mb-0">Application Process</h4>
+                            </div>
+                            <br />
                                 <ul class="benefits-list">
                                     <li>To apply for the Faculty Club Membership, kindly fill out the E-Form using the link provided below.</li>
                                     <li>Please ensure that all details are entered carefully and completed accurately, as the information provided will be used for preparing your Membership Card.</li>
