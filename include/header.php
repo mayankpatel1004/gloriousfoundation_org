@@ -110,12 +110,11 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link" href="results.php" data-bs-toggle="dropdown" role="button" id="navbarDropdown">Members <i class="fa fa-chevron-down"></i></a>
                             <ul class="dropdown-menu nav-list py-0 dropdown-menu-center" aria-labelledby="navbarDropdown">
-                                <li>
+                                <?php /*?><li>
                                     <a class="dropdown-item" href="<?php echo $url;?>membership-types.php">Membership Types</a>
                                 </li>
-                                <li>
-                                    <a class="dropdown-item" href="<?php echo $url;?>membership-privileges.php">Membership Privileges</a>
-                                </li>
+                                <?php */?>
+                                
                                 <li>
                                     <a class="dropdown-item" href="https://forms.gle/soJhtdWtj7BufVLCA" target="_blank">Membership Form</a>
                                 </li>
@@ -124,6 +123,9 @@
                                 </li>
                                 <li>
                                     <a class="dropdown-item" href="<?php echo $url;?>achievers-club-members.php">Achievers Club Members</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="<?php echo $url;?>institutional-membership.php">Institutional Membership</a>
                                 </li>
                             </ul>
                         </li>
