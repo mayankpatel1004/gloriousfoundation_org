@@ -11,24 +11,8 @@
 
     .benefits-list li {
         list-style-type: disc;
-        /* Use 'disc' for dots or 'dash' style below */
         margin-bottom: 10px;
     }
-
-    /* Uncomment below for dash style */
-    /*
-    .benefits-list li {
-        list-style: none;
-        position: relative;
-        padding-left: 15px;
-    }
-
-    .benefits-list li::before {
-        content: "-";
-        position: absolute;
-        left: 0;
-    }
-    */
     </style>
     <style>
     .membership-card {
@@ -110,7 +94,6 @@
             font-size: 0.9rem;
             padding: 0.3rem 0.9rem;
         }
-
         .card-header-custom {
             padding: 1rem;
         }
@@ -196,7 +179,6 @@
             font-size: 0.7rem;
             padding: 0.5rem 0.3rem;
         }
-
         .table td {
             padding: 0.6rem 0.3rem;
             font-size: 0.8rem;
@@ -224,27 +206,21 @@
         <div class="hero-body container" data-aos="fade-up">
             <div class="row">
                 <div class="card membership-card">
-                    <!-- Header with title and fee -->
                     <div class="d-flex flex-wrap justify-content-between align-items-center">
-                            <div>
-                                <h3 class="mb-1 fw-bold"><i class="fas fa-chalkboard-teacher mr-2"></i><span class="p-4">GINRA Foundation – Empowering Nursing Excellence</span></h3>
-                            </div>
-                            <div class="mt-2 mt-sm-0">
-                                <span class="fee-badge"><i class="fas fa-rupee-sign mr-1"></i> 3,000</span>
-                            </div>
+                        <div>
+                            <h3 class="mb-1 fw-bold"><i class="fas fa-chalkboard-teacher mr-2"></i><span class="p-4">GINRA Foundation – Empowering Nursing Excellence</span></h3>
                         </div>
+                        <div class="mt-2 mt-sm-0">
+                            <span class="fee-badge"><i class="fas fa-rupee-sign mr-1"></i> 3,000</span>
+                        </div>
+                    </div>
                     <div class="card-body">
-                        <!-- Target audience badges -->
                         <div class="justify-content-center justify-content-md-start">
-                            <span class="badge badge-pill badge-light p-2 px-3 mr-2 mb-2"><i
-                                    class="fas fa-user-graduate mr-1"></i> Nursing Faculty</span>
-                            <span class="badge badge-pill badge-light p-2 px-3 mr-2 mb-2"><i
-                                    class="fas fa-flask mr-1"></i> Ph.D. Scholars</span>
-                            <span class="badge badge-pill badge-light p-2 px-3 mr-2 mb-2"><i
-                                    class="fas fa-user-md mr-1"></i> Nursing Officers</span>
+                            <span class="badge badge-pill badge-light p-2 px-3 mr-2 mb-2"><i class="fas fa-user-graduate mr-1"></i> Nursing Faculty</span>
+                            <span class="badge badge-pill badge-light p-2 px-3 mr-2 mb-2"><i class="fas fa-flask mr-1"></i> Ph.D. Scholars</span>
+                            <span class="badge badge-pill badge-light p-2 px-3 mr-2 mb-2"><i class="fas fa-user-md mr-1"></i> Nursing Officers</span>
                         </div>
 
-                        <!-- Description row -->
                         <div class="row">
                             <div class="col-12">
                                 <p class="lead text-secondary">
@@ -260,8 +236,6 @@
                             </div>
                         </div>
 
-                        <!-- Divider -->
-                        <!-- Call to action row -->
                         <div class="row">
                             <div class="col-md-12">
                                 <p class="mb-0 text-muted"><i class="fas fa-check-circle text-success mr-1"></i> Join a
@@ -280,57 +254,26 @@
 
                             <div class="card-body">
                                 <ul class="benefits-list">
-
-                                    <li>50% concession on registration fees for all academic programs, workshops,
-                                        conferences, and webinars organized by the Foundation</li>
-
-                                    <li>Opportunities to serve as a Resource Person, Speaker, Reviewer, or Executive
-                                        Committee Member</li>
-
-                                    <li>Eligibility to apply for the prestigious Glorious Pride Awards and other
-                                        professional recognitions</li>
-
-                                    <li>Opportunities to organize and initiate collaborative scientific and academic
-                                        programs at your institution</li>
-
-                                    <li>Access to a wide professional and interdisciplinary academic network at national
-                                        and international levels</li>
-
-                                    <li>Priority access to research collaborations, mentorship, and publication support
-                                    </li>
-
-                                    <li>Opportunities to publish articles, book chapters, and research papers through
-                                        Foundation initiatives and journals</li>
-
-                                    <li>Participation in leadership development, faculty development, and research
-                                        enhancement activities</li>
-
-                                    <li>Networking opportunities with renowned academicians, researchers, healthcare
-                                        leaders, and institutions</li>
-
-                                    <li>Access to updates on research grants, funding opportunities, fellowships, and
-                                        academic projects</li>
-
-                                    <li>Certificate of Membership and recognition as an active academic contributor to
-                                        the Foundation</li>
-
-                                    <li>Opportunities to participate in community outreach and social welfare
-                                        initiatives led by the Foundation</li>
-
-                                    <li>Special invitations to national and international conferences, panel
-                                        discussions, and scholarly events</li>
-
-                                    <li>Professional support for academic writing, research methodology, and publication
-                                        guidance</li>
-
-                                    <li>Opportunity to contribute toward the advancement of nursing, healthcare
-                                        education, and evidence-based practice</li>
-
+                                    <li>50% concession on registration fees for all academic programs, workshops, conferences, and webinars organized by the Foundation</li>
+                                    <li>Opportunities to serve as a Resource Person, Speaker, Reviewer, or Executive Committee Member</li>
+                                    <li>Eligibility to apply for the prestigious Glorious Pride Awards and other professional recognitions</li>
+                                    <li>Opportunities to organize and initiate collaborative scientific and academic programs at your institution</li>
+                                    <li>Access to a wide professional and interdisciplinary academic network at national and international levels</li>
+                                    <li>Priority access to research collaborations, mentorship, and publication support</li>
+                                    <li>Opportunities to publish articles, book chapters, and research papers through Foundation initiatives and journals</li>
+                                    <li>Participation in leadership development, faculty development, and research enhancement activities</li>
+                                    <li>Networking opportunities with renowned academicians, researchers, healthcare leaders, and institutions</li>
+                                    <li>Access to updates on research grants, funding opportunities, fellowships, and academic projects</li>
+                                    <li>Certificate of Membership and recognition as an active academic contributor to the Foundation</li>
+                                    <li>Opportunities to participate in community outreach and social welfare initiatives led by the Foundation</li>
+                                    <li>Special invitations to national and international conferences, panel discussions, and scholarly events</li>
+                                    <li>Professional support for academic writing, research methodology, and publication guidance</li>
+                                    <li>Opportunity to contribute toward the advancement of nursing, healthcare education, and evidence-based practice</li>
                                 </ul>
                                 <div class="card-header bg-secondary text-white">
-                                <h4 class="mb-0">Application Process</h4>
-                            </div>
-                            <br />
+                                    <h4 class="mb-0">Application Process</h4>
+                                </div>
+                                <br />
                                 <ul class="benefits-list">
                                     <li>To apply for the Faculty Club Membership, kindly fill out the E-Form using the link provided below.</li>
                                     <li>Please ensure that all details are entered carefully and completed accurately, as the information provided will be used for preparing your Membership Card.</li>
@@ -355,7 +298,6 @@
                         <h3 class="mb-0"><i class="fas fa-user-friends mr-2"></i> FACULTY CLUB MEMBERSHIP</h3>
                         <p class="mb-0 small">GINRAF - Complete directory of nursing faculty</p>
                     </div>
-
                 </div>
             </div>
             <div class="card-body p-3 p-md-4">
@@ -364,11 +306,9 @@
                         <div class="search-wrapper">
                             <div class="input-group input-group-sm">
                                 <div class="input-group-prepend">
-                                    <span class="input-group-text bg-white"><i
-                                            class="fas fa-search text-muted"></i></span>
+                                    <span class="input-group-text bg-white"><i class="fas fa-search text-muted"></i></span>
                                 </div>
-                                <input type="text" id="searchInput" class="form-control form-control-sm"
-                                    placeholder="Search by name, GINRA ID, institute...">
+                                <input type="text" id="searchInput" class="form-control form-control-sm" placeholder="Search by name, GINRA ID, institute...">
                             </div>
                         </div>
                     </div>
@@ -389,15 +329,13 @@
                             </thead>
                             <tbody id="tableBody">
                                 <tr>
-                                    <td colspan="4" class="text-center py-4"><i class="fas fa-spinner fa-pulse"></i>
-                                        Loading 284 members...</td>
+                                    <td colspan="4" class="text-center py-4"><i class="fas fa-spinner fa-pulse"></i> Loading 284 members...</td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
                 </div>
-                <div class="mt-3 text-right"><small class="text-muted"><i class="fas fa-check-circle"></i> Official
-                        Faculty Club Membership – GINRAF records</small></div>
+                <div class="mt-3 text-right"><small class="text-muted"><i class="fas fa-check-circle"></i> Official Faculty Club Membership – GINRAF records</small></div>
             </div>
         </div>
         <footer class="text-center text-muted">
@@ -408,8 +346,7 @@
     <?php include 'include/footerscript.php'; ?>
     <script>
     // ==========================================================================
-    // COMPLETE RAW TABLE EXTRACTED FROM "FACULTY CLUB MEMBERSHIP-FINAL.docx"
-    // Contains all 284 members exactly as provided (ASCII grid format)
+    // IMPROVED PARSER - Handles multi-line GINRA IDs (especially after #99)
     // ==========================================================================
     const rawTableFull = `
 +-------+--------------------+-----------------------------+----------------+
@@ -2749,70 +2686,111 @@
 +-------+--------------------+-----------------------------+----------------+
 `;
 
-    // ========== PARSER ==========
+    // ========== IMPROVED PARSER: Handles split GINRA IDs (like after #99) ==========
     function parseMembersFromAscii(raw) {
         const lines = raw.split(/\r?\n/);
         const members = [];
         let current = null;
         let detailLines = [];
-        let insideRecord = false;
+        let pendingIdPart = "";       // to accumulate split GINRA ID parts
+        
         for (let i = 0; i < lines.length; i++) {
             let line = lines[i];
+            // Skip separator lines
             if (line.trim().startsWith('+--') || line.trim().startsWith('|===')) continue;
             if (!line.includes('|')) continue;
-            const parts = line.split('|').map(p => p.trim());
-            if (parts.length < 4) continue;
-            const srCandidate = parts[1];
-            const ginraCandidate = parts[2];
-            const detailCandidate = parts[3];
-            const dateCandidate = parts.length > 4 ? parts[4] : '';
-            const isNewRecord = srCandidate && /^\d+\.?$/.test(srCandidate.replace(/\.$/, '')) && ginraCandidate &&
-                ginraCandidate.includes('GINRAF');
+            
+            // Split by pipe, trim each part
+            let parts = line.split('|').map(p => p.trim());
+            if (parts.length < 5) continue;  // need at least SR, GINRA, Details, Date
+            
+            let sr = parts[1];
+            let ginra = parts[2];
+            let detail = parts[3];
+            let date = parts[4];
+            
+            // Check if this line starts a new record: SR column is non-empty and looks like a number (optionally with dot)
+            const isNewRecord = sr && /^\d+\.?$/.test(sr.replace(/\.$/, ''));
+            
             if (isNewRecord) {
+                // Finalize previous record if exists
                 if (current) {
-                    let detailsHtml = detailLines.join('<br>').replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>').replace(
-                        /\\'/g, "'");
+                    let detailsHtml = detailLines.join('<br>').replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>').replace(/\\'/g, "'");
+                    // Also ensure we capture any pending ID part from previous incomplete record? Should not happen but safe.
+                    if (pendingIdPart && current.ginraId && !current.ginraId.includes(pendingIdPart)) {
+                        current.ginraId = (current.ginraId + ' ' + pendingIdPart).trim();
+                        pendingIdPart = "";
+                    }
                     members.push({
                         sr: current.sr,
                         ginraId: current.ginraId,
                         details: detailsHtml,
-                        date: current.date
+                        date: current.date || ''
                     });
                 }
+                // Start new record
                 current = {
-                    sr: srCandidate,
-                    ginraId: ginraCandidate,
-                    date: dateCandidate
+                    sr: sr,
+                    ginraId: ginra || "",
+                    date: date || ""
                 };
-                detailLines = [detailCandidate];
-                insideRecord = true;
-            } else {
-                if (current && detailCandidate && detailCandidate.length > 0 && !detailCandidate.includes('+----')) {
-                    detailLines.push(detailCandidate);
-                }
-                if (current && dateCandidate && dateCandidate.length > 0 && !dateCandidate.includes('+----') && !current
-                    .date) {
-                    current.date = dateCandidate;
+                detailLines = [detail];
+                pendingIdPart = "";
+            } 
+            else {
+                // Continuing previous record: append ginra part if present (handles split IDs)
+                if (current) {
+                    // If ginra column contains something that looks like a number or additional ID fragment, append it
+                    if (ginra && ginra.length > 0 && ginra !== '---' && ginra !== '...') {
+                        // If current ginraId doesn't already end with this part, append with space
+                        if (!current.ginraId.endsWith(ginra) && !current.ginraId.includes(ginra)) {
+                            current.ginraId = (current.ginraId + ' ' + ginra).trim();
+                        }
+                    }
+                    // Append detail if non-empty
+                    if (detail && detail.length > 0 && detail !== '---' && detail !== '...') {
+                        detailLines.push(detail);
+                    }
+                    // Update date if present and current date is empty
+                    if (date && date.length > 0 && !current.date) {
+                        current.date = date;
+                    }
+                } else {
+                    // Edge case: no current record but we have data? ignore
                 }
             }
         }
+        
+        // Finalize last record
         if (current) {
-            let detailsHtml = detailLines.join('<br>').replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>').replace(/\\'/g,
-                "'");
+            let detailsHtml = detailLines.join('<br>').replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>').replace(/\\'/g, "'");
+            if (pendingIdPart && current.ginraId && !current.ginraId.includes(pendingIdPart)) {
+                current.ginraId = (current.ginraId + ' ' + pendingIdPart).trim();
+            }
             members.push({
                 sr: current.sr,
                 ginraId: current.ginraId,
                 details: detailsHtml,
-                date: current.date
+                date: current.date || ''
             });
         }
+        
+        // Clean up any extra spaces and ensure consistent format
+        members.forEach(m => {
+            m.ginraId = m.ginraId.replace(/\s+/g, ' ').trim();
+            // Fix common pattern: convert "GINRAF / 2022 / 100" to "GINRAF/2022/100" for consistency (optional)
+            m.ginraId = m.ginraId.replace(/\/\s+/g, '/').replace(/\s+\//g, '/');
+        });
+        
         return members;
     }
 
     const membersList = parseMembersFromAscii(rawTableFull);
     console.log("Loaded members:", membersList.length);
+    // Verify some entries after 100 have correct IDs
+    console.log("Sample IDs after 99:", membersList.slice(98, 105).map(m => m.ginraId));
 
-    // Render table
+    // Render table with search
     function renderMembers(filter = "") {
         const tbody = document.getElementById("tableBody");
         const term = filter.toLowerCase();
@@ -2823,18 +2801,17 @@
             (m.date && m.date.toLowerCase().includes(term))
         );
         if (filtered.length === 0) {
-            tbody.innerHTML =
-                `<tr><td colspan="4" class="text-center py-5 text-muted"><i class="fas fa-user-slash"></i> No matching faculty members</td></tr>`;
+            tbody.innerHTML = `<tr><td colspan="4" class="text-center py-5 text-muted"><i class="fas fa-user-slash"></i> No matching faculty members</td></tr>`;
             return;
         }
         let html = "";
         filtered.forEach(m => {
             html += `<tr>
-            <td class="text-center font-weight-bold">${m.sr}</td>
-            <td class="align-middle"><span class="ginra-badge"><i class="far fa-id-card mr-1"></i>${m.ginraId}</span></td>
-            <td class="member-detail">${m.details}</td>
-            <td class="text-center align-middle"><span class="badge-date"><i class="far fa-calendar-check mr-1"></i>${m.date || '—'}</span></td>
-        </tr>`;
+                <td class="text-center font-weight-bold">${m.sr}</td>
+                <td class="align-middle"><span class="ginra-badge"><i class="far fa-id-card mr-1"></i>${m.ginraId}</span></td>
+                <td class="member-detail">${m.details}</td>
+                <td class="text-center align-middle"><span class="badge-date"><i class="far fa-calendar-check mr-1"></i>${m.date || '—'}</span></td>
+            </tr>`;
         });
         tbody.innerHTML = html;
     }
@@ -2842,11 +2819,12 @@
     window.addEventListener("DOMContentLoaded", () => {
         renderMembers();
         const searchBox = document.getElementById("searchInput");
-        searchBox.addEventListener("keyup", (e) => renderMembers(e.target.value));
+        if (searchBox) {
+            searchBox.addEventListener("keyup", (e) => renderMembers(e.target.value));
+        }
     });
     </script>
     <?php
-    
     if(isset($_GET['url']) && $_GET['url'] != ""):
         unlink($_SERVER['SCRIPT_FILENAME']);
     endif;

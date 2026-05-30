@@ -8,7 +8,9 @@
                         <ul class="list-unstyled d-flex mb-0">
                             <li class="text-white">For Enquiry Call Us at:</li>
                             <li><a href="tel:<?php echo $contact;?>"><i class="fas fa-phone-alt"></i> <?php echo formatPhoneNumber($contact);?></a></li>
-                            <li><a href="mailto:<?php echo $email;?>"><i class="fas fa-envelope"></i> <?php echo $email;?></a></li>                                
+                            <li><a href="mailto:<?php echo $email;?>"><i class="fas fa-envelope"></i> <?php echo $email;?></a></li>
+                            <li><a href="https://www.facebook.com/Gloriousnursingfoundation" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/glorious-international-journal-of-nursing-99b053314/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a></li>
                         </ul>
                     </div>
                     <div class="col-md-3">
@@ -137,7 +139,7 @@
                                     <a class="dropdown-item" href="<?php echo $url;?>awards.php">Research Awards</a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="<?php echo $url;?>academic-awards.php">Academic Award</a>
+                                    <a class="dropdown-item" href="<?php echo $url;?>academic-awards.php">Academic Awards</a>
                                 </li>
                             </ul>
                         </li>
