@@ -1,5 +1,15 @@
 <?php include "connection.php";?>
 <?php include "functions.php";?>
+<style>
+    .dropdown-submenu {
+    position: relative;
+}
+.dropdown-submenu > .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -1px;
+}
+</style>
 <!-- header -->
 <div class="header_top main-bg py-2 mob-hide">
             <div class="container">
@@ -45,114 +55,97 @@
         </div>
         <header class="nav-down">
         <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container">
-                <?php /*?><a class="navbar-brand" href="<?php echo $url;?>"><img src="<?php echo $logo_url;?>" alt="logo" class="logo"></a><?php */?>
-                <a class="navbar-brand main_clr main_logo" href="<?php echo $url;?>"><?php echo $website_name;?></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="<?php echo $url;?>">Home</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link" href="about.php" data-bs-toggle="dropdown" role="button" id="navbarDropdown">About <i class="fa fa-chevron-down"></i></a>
-                            <ul class="dropdown-menu nav-list py-0 dropdown-menu-center" aria-labelledby="navbarDropdown">
+    <div class="container">
+        <a class="navbar-brand main_clr main_logo" href="<?php echo $url;?>"><?php echo $website_name;?></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="<?php echo $url;?>">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="about.php" data-bs-toggle="dropdown" role="button" id="navbarDropdown">About <i class="fa fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu nav-list py-0 dropdown-menu-center" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="<?php echo $url;?>about.php">About The Foundation</a></li>
+                        <li><a class="dropdown-item" href="<?php echo $url;?>vision-and-mission.php">Vision & Mission</a></li>
+                        <li><a class="dropdown-item" href="<?php echo $url;?>aims-and-objectives.php">Aims & Objectives</a></li>
+                        <li><a class="dropdown-item" href="<?php echo $url;?>board-members.php">Board Members</a></li>
+                        <li><a class="dropdown-item" href="<?php echo $url;?>national-international-center.php">National & International Centers</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="results.php" data-bs-toggle="dropdown" role="button" id="navbarDropdown">Facilities <i class="fa fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu nav-list py-0 dropdown-menu-center" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="<?php echo $url;?>continuing-nursing-education.php">Continuing Nursing Education</a></li>
+                        <li><a class="dropdown-item" href="<?php echo $url;?>glorious-learning-resource-centre.php">Glorious Learning Resource Centre</a></li>
+                        <li><a class="dropdown-item" href="<?php echo $url;?>research-activity.php">Research Activity</a></li>
+                        <li><a class="dropdown-item" href="<?php echo $url;?>short-term-courses.php">Short Term Courses</a></li>
+                        <li><a class="dropdown-item" href="<?php echo $url;?>research-grants.php">Research Grants</a></li>
+                        <li><a class="dropdown-item" href="<?php echo $url;?>scholarships.php">Scholarships</a></li>
+                        <li><a class="dropdown-item" href="<?php echo $url;?>social-services.php">Social Services</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="results.php" data-bs-toggle="dropdown" role="button" id="navbarDropdown">Events <i class="fa fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu nav-list py-0 dropdown-menu-center" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="<?php echo $url;?>sttp.php">STTP</a></li>
+                        <li><a class="dropdown-item" href="<?php echo $url;?>fdp.php">FDP</a></li>
+                        <li><a class="dropdown-item" href="<?php echo $url;?>certificate-courses.php">Certificate Courses</a></li>
+                        <li><a class="dropdown-item" href="<?php echo $url;?>conferences.php">Conferences</a></li>
+                        <li><a class="dropdown-item" href="<?php echo $url;?>workshops.php">Workshops</a></li>
+                        <li><a class="dropdown-item" href="<?php echo $url;?>webiners.php">Webiners</a></li>
+                        <li><a class="dropdown-item" href="<?php echo $url;?>cne.php">CNE</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="results.php" data-bs-toggle="dropdown" role="button" id="navbarDropdown">Fellowship <i class="fa fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu nav-list py-0 dropdown-menu-center" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="<?php echo $url;?>fellowships.php">Honorary Fellowship</a></li>
+                        <!-- Post-Doc Fellowship now with nested sub-items -->
+                        <li class="dropdown-submenu">
+                            <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown" role="button">Post-Doc Fellowship</a>
+                            <ul class="dropdown-menu dropdown-menu-end">
                                 <li>
-                                    <a class="dropdown-item" href="<?php echo $url;?>about.php">About The Foundation</a>
+                                    <a class="dropdown-item" href="<?php echo $url;?>information-booklet.php">Information Booklet</a>
+                                </li>
+                                 <li>
+                                    <a class="dropdown-item" href="<?php echo $url;?>enrolled.php">Enrolled</a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="<?php echo $url;?>vision-and-mission.php">Vision & Mission</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="<?php echo $url;?>aims-and-objectives.php">Aims & Objectives</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="<?php echo $url;?>board-members.php">Board Members</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="<?php echo $url;?>national-international-center.php">National & International Centers</a>
+                                    <a class="dropdown-item" href="<?php echo $url;?>Awardees.php">Awardees</a>
                                 </li>
                             </ul>
-                        </li>
-                        
-                        
-                        <li class="nav-item dropdown">
-                            <a class="nav-link" href="results.php" data-bs-toggle="dropdown" role="button" id="navbarDropdown">Facilities <i class="fa fa-chevron-down"></i></a>
-                            <ul class="dropdown-menu nav-list py-0 dropdown-menu-center" aria-labelledby="navbarDropdown">
-                                <li>
-                                    <a class="dropdown-item" href="<?php echo $url;?>continuing-nursing-education.php">Continuing Nursing Education</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="<?php echo $url;?>glorious-learning-resource-centre.php">Glorious Learning Resource Centre</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="<?php echo $url;?>research-activity.php">Research Activity</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="<?php echo $url;?>short-term-courses.php">Short Term Courses</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="<?php echo $url;?>research-grants.php">Research Grants</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="<?php echo $url;?>scholarships.php">Scholarships</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="<?php echo $url;?>social-services.php">Social Services</a>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="<?php echo $url;?>fellowships.php">Fellowship</a>
-                        </li>
-
-                        <li class="nav-item dropdown">
-                            <a class="nav-link" href="results.php" data-bs-toggle="dropdown" role="button" id="navbarDropdown">Members <i class="fa fa-chevron-down"></i></a>
-                            <ul class="dropdown-menu nav-list py-0 dropdown-menu-center" aria-labelledby="navbarDropdown">
-                                <?php /*?><li>
-                                    <a class="dropdown-item" href="<?php echo $url;?>membership-types.php">Membership Types</a>
-                                </li>
-                                <?php */?>
-                                
-                                <li>
-                                    <a class="dropdown-item" href="https://forms.gle/soJhtdWtj7BufVLCA" target="_blank">Membership Form</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="<?php echo $url;?>faculty-club-members.php">Faculty Club Members</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="<?php echo $url;?>achievers-club-members.php">Achievers Club Members</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="<?php echo $url;?>institutional-membership.php">Institutional Membership</a>
-                                </li>
-                            </ul>
-                        </li>
-                        
-                        <li class="nav-item dropdown">
-                            <a class="nav-link" href="awards.php" data-bs-toggle="dropdown" role="button" id="navbarDropdown">Awards <i class="fa fa-chevron-down"></i></a>
-                            <ul class="dropdown-menu nav-list py-0 dropdown-menu-center" aria-labelledby="navbarDropdown">
-                                <li>
-                                    <a class="dropdown-item" href="<?php echo $url;?>awards.php">Research Awards</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="<?php echo $url;?>academic-awards.php">Academic Awards</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://gloriousjournal.com/" target="_blank">GIJNR Journal</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="<?php echo $url;?>contact.php">Contact Us</a>
                         </li>
                     </ul>
-                </div>
-            </div>
-        </nav>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="results.php" data-bs-toggle="dropdown" role="button" id="navbarDropdown">Members <i class="fa fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu nav-list py-0 dropdown-menu-center" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="https://forms.gle/soJhtdWtj7BufVLCA" target="_blank">Membership Form</a></li>
+                        <li><a class="dropdown-item" href="<?php echo $url;?>faculty-club-members.php">Faculty Club Members</a></li>
+                        <li><a class="dropdown-item" href="<?php echo $url;?>achievers-club-members.php">Achievers Club Members</a></li>
+                        <li><a class="dropdown-item" href="<?php echo $url;?>institutional-membership.php">Institutional Membership</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="awards.php" data-bs-toggle="dropdown" role="button" id="navbarDropdown">Awards <i class="fa fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu nav-list py-0 dropdown-menu-center" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="<?php echo $url;?>awards.php">Research Awards</a></li>
+                        <li><a class="dropdown-item" href="<?php echo $url;?>academic-awards.php">Academic Awards</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://gloriousjournal.com/" target="_blank">GIJNR Journal</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="<?php echo $url;?>contact.php">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
     </header>
     <script src="<?php echo $url;?>js/jquery.min.js"></script>
     <script type="text/javascript">

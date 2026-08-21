@@ -51,7 +51,7 @@
             <div class="row">
                 <div class="col-lg-7 align-items-center section-padding">
                     <div class="hero-body" data-aos="fade-up">
-                        <h1 class="text-uppercase sub-header">Fellowships</h1>
+                        <h1 class="text-uppercase sub-header">Honorary Fellowships</h1>
                     </div>
                 </div>
             </div>

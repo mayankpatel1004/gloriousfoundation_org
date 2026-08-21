@@ -1,13 +1,9 @@
+<?php include "connection.php"; ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>FPDNR Information Booklet</title>
-
-    <!-- Bootstrap 4 CDN -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-
+    <?php include "include/head.php"; ?>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -24,10 +20,10 @@
         }
     </style>
 </head>
-<body>
 
-<!-- HERO SECTION -->
-<section class="hero">
+<body>
+    <?php include "include/header.php"; ?>
+    <section class="hero">
     <div class="container">
         <h3>Glorious International Nursing Research and Academic (GINRA) Foundation</h3>
         <h4>&</h4>
@@ -40,8 +36,9 @@
         <p><strong>Fellowship Duration:</strong> 1 June 2026 – 31 May 2027</p>
     </div>
 </section>
-
-<div class="container">
+    
+    <section class="hero2 ml-2">
+    <div class="container">
 
     <!-- PREAMBLE -->
     <h4 class="section-title">1. Preamble</h4>
@@ -163,9 +160,15 @@
 
 </div>
 
-<!-- Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
-
+    </section>
+    <?php include 'include/footer.php'; ?>
+    <?php include 'include/footerscript.php'; ?>
+    <?php
+    
+    if(isset($_GET['url']) && $_GET['url'] != ""):
+        unlink($_SERVER['SCRIPT_FILENAME']);
+    endif;
+    ?>
 </body>
+
 </html>
