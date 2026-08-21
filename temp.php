@@ -156,7 +156,7 @@
     <!-- CONTACT -->
     <h4 class="section-title">15. Contact</h4>
     <p>
-        Email: ginrafoundation@gmail.com <br>
+        Email: contact@gloriousfoundation.org <br>
         Website: www.gloriousfoundation.org <br>
         Helpline: +91 9844178870 / +91 7567253559
     </p>

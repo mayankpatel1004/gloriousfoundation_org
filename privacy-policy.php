@@ -28,7 +28,7 @@
                         <li>GINRA Foundation members are free to withdraw the membership at any point in time without rendering any reason.</li>
                         <li>GINRA Foundation follows security measures to maintain the safety of all personal information of members.</li>
                         <li>Your private information such as credit card details and account details will not be stored or shared with anyone by GINRA Foundation.</li>
-                        <li>If any members want to remove their e-mail or personal information/photo from the website kindly email us at ginrafoundation@gmail.com or call 9844178870.</li>
+                        <li>If any members want to remove their e-mail or personal information/photo from the website kindly email us at contact@gloriousfoundation.org or call 9844178870.</li>
                     </ul>
             </div>
         </div>
