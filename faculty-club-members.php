@@ -327,6 +327,7 @@
 
                                 if ($httpCode == 200 && !empty($response)) {
                                     $data = json_decode($response, true);
+                                    print_r($data);exit;
                                     if (json_last_error() === JSON_ERROR_NONE && isset($data['data']) && is_array($data['data'])) {
                                         foreach ($data['data'] as $item) {
                                             $members[] = [
