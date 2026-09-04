@@ -158,10 +158,6 @@
         line-height: 1.45;
     }
 
-    .search-wrapper {
-        max-width: 360px;
-    }
-
     .info-tag {
         background: #deedf5;
         border-radius: 30px;
@@ -301,21 +297,6 @@
                 </div>
             </div>
             <div class="card-body p-3 p-md-4">
-                <div class="row mb-3 align-items-center">
-                    <div class="col-md-6">
-                        <div class="search-wrapper">
-                            <div class="input-group input-group-sm">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text bg-white"><i class="fas fa-search text-muted"></i></span>
-                                </div>
-                                <input type="text" id="searchInput" class="form-control form-control-sm" placeholder="Search by name, GINRA ID, institute...">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 text-md-right mt-2 mt-md-0">
-                        <small><i class="far fa-calendar-alt"></i> Faculty club – India & international</small>
-                    </div>
-                </div>
                 <div class="table-container bg-white rounded">
                     <div class="table-responsive">
                         <table class="table table-hover table-bordered mb-0" id="membersTable">
@@ -327,10 +308,54 @@
                                     <th style="width: 17%">Date of joining</th>
                                 </tr>
                             </thead>
-                            <tbody id="tableBody">
-                                <tr>
-                                    <td colspan="4" class="text-center py-4"><i class="fas fa-spinner fa-pulse"></i> Loading members...</td>
-                                </tr>
+                            <tbody>
+                                <?php
+                                // --------------------------------------------------------------
+                                // SERVER-SIDE API CALL – no JavaScript, pure PHP
+                                // --------------------------------------------------------------
+                                $apiUrl = 'https://gloriousjournal.com/membership-api.html?data=Faculty';
+                                $members = [];
+
+                                $ch = curl_init();
+                                curl_setopt($ch, CURLOPT_URL, $apiUrl);
+                                curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+                                curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+                                curl_setopt($ch, CURLOPT_TIMEOUT, 10);
+                                $response = curl_exec($ch);
+                                $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+                                curl_close($ch);
+
+                                if ($httpCode == 200 && !empty($response)) {
+                                    $data = json_decode($response, true);
+                                    if (json_last_error() === JSON_ERROR_NONE && isset($data['data']) && is_array($data['data'])) {
+                                        foreach ($data['data'] as $item) {
+                                            $members[] = [
+                                                'sr'       => $item['sr'] ?? $item['sr_no'] ?? $item['SR.'] ?? '',
+                                                'ginraId'  => $item['ginra_id'] ?? $item['ginraf_id'] ?? $item['GINRA ID'] ?? '',
+                                                'details'  => $item['details'] ?? $item['member_details'] ?? $item['MEMBER DETAILS'] ?? '',
+                                                'date'     => $item['date'] ?? $item['joining_date'] ?? $item['DATE OF JOINING'] ?? ''
+                                            ];
+                                        }
+                                    }
+                                }
+
+                                if (count($members) === 0) {
+                                    echo '<tr><td colspan="4" class="text-center py-5 text-muted"><i class="fas fa-user-slash"></i> No faculty members found.</td></tr>';
+                                } else {
+                                    foreach ($members as $m) {
+                                        $sr = htmlspecialchars($m['sr']);
+                                        $ginraId = htmlspecialchars($m['ginraId']);
+                                        $details = $m['details']; // Already safe, but we can escape if needed
+                                        $date = htmlspecialchars($m['date'] ?: '—');
+                                        echo '<tr>';
+                                        echo '<td class="text-center font-weight-bold">' . $sr . '</td>';
+                                        echo '<td class="align-middle"><span class="ginra-badge"><i class="far fa-id-card mr-1"></i>' . $ginraId . '</span></td>';
+                                        echo '<td class="member-detail">' . $details . '</td>';
+                                        echo '<td class="text-center align-middle"><span class="badge-date"><i class="far fa-calendar-check mr-1"></i>' . $date . '</span></td>';
+                                        echo '</tr>';
+                                    }
+                                }
+                                ?>
                             </tbody>
                         </table>
                     </div>
@@ -344,96 +369,6 @@
     </section>
     <?php include 'include/footer.php'; ?>
     <?php include 'include/footerscript.php'; ?>
-
-    <?php
-    // --------------------------------------------------------------
-    // SERVER-SIDE API CALL – avoids CORS issues
-    // --------------------------------------------------------------
-    $apiUrl = 'https://gloriousjournal.com/membership-api.html?data=Faculty';
-    $membersArray = [];
-
-    // Use cURL to fetch the API response
-    $ch = curl_init();
-    curl_setopt($ch, CURLOPT_URL, $apiUrl);
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-    curl_setopt($ch, CURLOPT_TIMEOUT, 10);
-    $response = curl_exec($ch);
-    $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-    $curlError = curl_error($ch);
-    curl_close($ch);
-
-    // Only process if we got a successful response
-    if ($httpCode == 200 && !empty($response)) {
-        $data = json_decode($response, true);
-        if (json_last_error() === JSON_ERROR_NONE && isset($data['data']) && is_array($data['data'])) {
-            $membersArray = array_map(function($item) {
-                return [
-                    'sr'       => $item['sr'] ?? $item['sr_no'] ?? $item['SR.'] ?? '',
-                    'ginraId'  => $item['ginra_id'] ?? $item['ginraf_id'] ?? $item['GINRA ID'] ?? '',
-                    'details'  => $item['details'] ?? $item['member_details'] ?? $item['MEMBER DETAILS'] ?? '',
-                    'date'     => $item['date'] ?? $item['joining_date'] ?? $item['DATE OF JOINING'] ?? ''
-                ];
-            }, $data['data']);
-        } else {
-            // JSON decode error or missing 'data' – fallback to empty array
-            $membersArray = [];
-        }
-    } else {
-        // cURL error or non‑200 response – fallback
-        $membersArray = [];
-    }
-    ?>
-
-    <script>
-    // Inject the server‑side data directly into JavaScript
-    var membersList = <?php echo json_encode($membersArray); ?>;
-
-    // Debug: log to console if data is loaded (remove in production)
-    console.log('Loaded ' + membersList.length + ' members.');
-
-    function renderMembers(filter) {
-        filter = filter || "";
-        var tbody = document.getElementById("tableBody");
-        var term = filter.toLowerCase().trim();
-
-        var filtered = membersList.filter(function(m) {
-            var searchable = (m.sr || '') + ' ' +
-                            (m.ginraId || '') + ' ' +
-                            (m.details || '') + ' ' +
-                            (m.date || '');
-            return searchable.toLowerCase().includes(term);
-        });
-
-        if (filtered.length === 0) {
-            tbody.innerHTML = '<tr><td colspan="4" class="text-center py-5 text-muted"><i class="fas fa-user-slash"></i> No matching faculty members</td></tr>';
-            return;
-        }
-
-        var html = "";
-        filtered.forEach(function(m) {
-            var detailsHtml = m.details || '';
-            html += '<tr>' +
-                '<td class="text-center font-weight-bold">' + (m.sr || '') + '</td>' +
-                '<td class="align-middle"><span class="ginra-badge"><i class="far fa-id-card mr-1"></i>' + (m.ginraId || '') + '</span></td>' +
-                '<td class="member-detail">' + detailsHtml + '</td>' +
-                '<td class="text-center align-middle"><span class="badge-date"><i class="far fa-calendar-check mr-1"></i>' + (m.date || '—') + '</span></td>' +
-                '</tr>';
-        });
-        tbody.innerHTML = html;
-    }
-
-    // Render immediately (the table already shows "Loading..." but we replace it)
-    renderMembers();
-
-    // Attach search listener
-    var searchBox = document.getElementById("searchInput");
-    if (searchBox) {
-        searchBox.addEventListener("keyup", function(e) {
-            renderMembers(e.target.value);
-        });
-    }
-    </script>
 
     <?php
     if(isset($_GET['url']) && $_GET['url'] != ""):
