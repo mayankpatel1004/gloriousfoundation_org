@@ -1,6 +1,4 @@
 <?php 
-header("Content-Type: application/json");
-header("Access-Control-Allow-Origin: *"); // allow third-party access
 include "connection.php";?>
 <!DOCTYPE html>
 <html lang="en">
