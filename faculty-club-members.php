@@ -1,4 +1,5 @@
 <?php include "connection.php"; ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -329,7 +330,7 @@
                             </thead>
                             <tbody id="tableBody">
                                 <tr>
-                                    <td colspan="4" class="text-center py-4"><i class="fas fa-spinner fa-pulse"></i> Loading members from API...</td>
+                                    <td colspan="4" class="text-center py-4"><i class="fas fa-spinner fa-pulse"></i> Loading members...</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -344,85 +345,86 @@
     </section>
     <?php include 'include/footer.php'; ?>
     <?php include 'include/footerscript.php'; ?>
-    <script>
-    // ========================================================================
-    // FETCH DATA FROM THE MEMBERSHIP API (data is inside response.data)
-    // ========================================================================
-    //const API_URL = 'http://localhost/gloriousjournal_com/membership-api.html?data=faculty';
-    const API_URL = 'https://gloriousjournal.com/membership-api.html?data=Faculty';
 
-    let membersList = [];
+    <?php
+    // --------------------------------------------------------------
+    // SERVER-SIDE API CALL – avoids CORS issues
+    // --------------------------------------------------------------
+    $apiUrl = 'https://gloriousjournal.com/membership-api.html?data=Faculty';
+    $membersArray = [];
+
+    // Use cURL to fetch the API response
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL, $apiUrl);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false); // ignore SSL verification if needed
+    curl_setopt($ch, CURLOPT_TIMEOUT, 10);
+    $response = curl_exec($ch);
+    $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+    curl_close($ch);
+
+    if ($httpCode == 200 && $response) {
+        $data = json_decode($response, true);
+        if (isset($data['data']) && is_array($data['data'])) {
+            // Map the fields to our expected structure
+            $membersArray = array_map(function($item) {
+                return [
+                    'sr'       => $item['sr'] ?? $item['sr_no'] ?? $item['SR.'] ?? '',
+                    'ginraId'  => $item['ginra_id'] ?? $item['ginraf_id'] ?? $item['GINRA ID'] ?? '',
+                    'details'  => $item['details'] ?? $item['member_details'] ?? $item['MEMBER DETAILS'] ?? '',
+                    'date'     => $item['date'] ?? $item['joining_date'] ?? $item['DATE OF JOINING'] ?? ''
+                ];
+            }, $data['data']);
+        }
+    }
+    ?>
+
+    <script>
+    // Inject the server‑side data directly into JavaScript
+    var membersList = <?php echo json_encode($membersArray); ?>;
 
     function renderMembers(filter = "") {
-        const tbody = document.getElementById("tableBody");
-        const term = filter.toLowerCase().trim();
+        var tbody = document.getElementById("tableBody");
+        var term = filter.toLowerCase().trim();
 
-        const filtered = membersList.filter(m => {
-            const searchable = (m.sr || '') + ' ' +
-                              (m.ginraId || '') + ' ' +
-                              (m.details || '') + ' ' +
-                              (m.date || '');
+        var filtered = membersList.filter(function(m) {
+            var searchable = (m.sr || '') + ' ' +
+                            (m.ginraId || '') + ' ' +
+                            (m.details || '') + ' ' +
+                            (m.date || '');
             return searchable.toLowerCase().includes(term);
         });
 
         if (filtered.length === 0) {
-            tbody.innerHTML = `<tr><td colspan="4" class="text-center py-5 text-muted"><i class="fas fa-user-slash"></i> No matching faculty members</td></tr>`;
+            tbody.innerHTML = '<tr><td colspan="4" class="text-center py-5 text-muted"><i class="fas fa-user-slash"></i> No matching faculty members</td></tr>';
             return;
         }
 
-        let html = "";
-        filtered.forEach(m => {
-            const detailsHtml = m.details || '';
-            html += `<tr>
-                <td class="text-center font-weight-bold">${m.sr || ''}</td>
-                <td class="align-middle"><span class="ginra-badge"><i class="far fa-id-card mr-1"></i>${m.ginraId || ''}</span></td>
-                <td class="member-detail">${detailsHtml}</td>
-                <td class="text-center align-middle"><span class="badge-date"><i class="far fa-calendar-check mr-1"></i>${m.date || '—'}</span></td>
-            </tr>`;
+        var html = "";
+        filtered.forEach(function(m) {
+            var detailsHtml = m.details || '';
+            html += '<tr>' +
+                '<td class="text-center font-weight-bold">' + (m.sr || '') + '</td>' +
+                '<td class="align-middle"><span class="ginra-badge"><i class="far fa-id-card mr-1"></i>' + (m.ginraId || '') + '</span></td>' +
+                '<td class="member-detail">' + detailsHtml + '</td>' +
+                '<td class="text-center align-middle"><span class="badge-date"><i class="far fa-calendar-check mr-1"></i>' + (m.date || '—') + '</span></td>' +
+                '</tr>';
         });
         tbody.innerHTML = html;
     }
 
-    window.addEventListener("DOMContentLoaded", () => {
-        const tbody = document.getElementById("tableBody");
-        tbody.innerHTML = `<tr><td colspan="4" class="text-center py-4"><i class="fas fa-spinner fa-pulse"></i> Loading faculty members...</td></tr>`;
-
-        fetch(API_URL)
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error(`HTTP error! status: ${response.status}`);
-                }
-                return response.json();
-            })
-            .then(response => {
-                // The API returns an object with a "data" property containing the array
-                const data = response.data;
-                if (!Array.isArray(data)) {
-                    throw new Error('API response.data is not an array.');
-                }
-
-                // Map the fields – adjust property names if the API uses different keys
-                membersList = data.map(item => ({
-                    sr: item.sr || item.sr_no || item['SR.'] || '',
-                    ginraId: item.ginra_id || item.ginraf_id || item['GINRA ID'] || '',
-                    details: item.details || item.member_details || item['MEMBER DETAILS'] || '',
-                    date: item.date || item.joining_date || item['DATE OF JOINING'] || ''
-                }));
-
-                renderMembers();
-
-                // Enable search
-                const searchBox = document.getElementById("searchInput");
-                if (searchBox) {
-                    searchBox.addEventListener("keyup", (e) => renderMembers(e.target.value));
-                }
-            })
-            .catch(error => {
-                console.error('Error fetching membership data:', error);
-                tbody.innerHTML = `<tr><td colspan="4" class="text-center py-5 text-danger"><i class="fas fa-exclamation-triangle"></i> Failed to load data. Please try again later.</td></tr>`;
+    // Render on page load and attach search listener
+    window.addEventListener("DOMContentLoaded", function() {
+        renderMembers();
+        var searchBox = document.getElementById("searchInput");
+        if (searchBox) {
+            searchBox.addEventListener("keyup", function(e) {
+                renderMembers(e.target.value);
             });
+        }
     });
     </script>
+
     <?php
     if(isset($_GET['url']) && $_GET['url'] != ""):
         unlink($_SERVER['SCRIPT_FILENAME']);
