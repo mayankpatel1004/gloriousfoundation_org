@@ -365,6 +365,7 @@
 
     if ($httpCode == 200 && $response) {
         $data = json_decode($response, true);
+        print_r($data);exit;
         if (isset($data['data']) && is_array($data['data'])) {
             // Map the fields to our expected structure
             $membersArray = array_map(function($item) {
