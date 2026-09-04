@@ -122,7 +122,7 @@ $sql = "SELECT id, ginra_id, member_name, designation, joining_date, membership_
     }
 
     .ginra-id {
-        font-family: 'SF Mono', monospace;
+        font-family: "Sansita", sans-serif;
         font-weight: 500;
         background: #f1f5f9;
         display: inline-block;

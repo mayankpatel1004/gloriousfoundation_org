@@ -156,7 +156,7 @@ $sql = "SELECT id, ginra_id, member_name, designation, joining_date, membership_
     }
 
     .ginra-badge {
-        font-family: monospace;
+        font-family: "Sansita", sans-serif;
         background: #f1f5f9;
         display: inline-block;
         padding: 0.2rem 0.7rem;
