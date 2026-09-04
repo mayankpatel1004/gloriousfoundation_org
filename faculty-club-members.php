@@ -1,5 +1,4 @@
 <?php include "connection.php"; ?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -357,17 +356,17 @@
     $ch = curl_init();
     curl_setopt($ch, CURLOPT_URL, $apiUrl);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false); // ignore SSL verification if needed
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
     curl_setopt($ch, CURLOPT_TIMEOUT, 10);
     $response = curl_exec($ch);
     $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+    $curlError = curl_error($ch);
     curl_close($ch);
 
-    if ($httpCode == 200 && $response) {
+    // Only process if we got a successful response
+    if ($httpCode == 200 && !empty($response)) {
         $data = json_decode($response, true);
-        print_r($data);exit;
-        if (isset($data['data']) && is_array($data['data'])) {
-            // Map the fields to our expected structure
+        if (json_last_error() === JSON_ERROR_NONE && isset($data['data']) && is_array($data['data'])) {
             $membersArray = array_map(function($item) {
                 return [
                     'sr'       => $item['sr'] ?? $item['sr_no'] ?? $item['SR.'] ?? '',
@@ -376,7 +375,13 @@
                     'date'     => $item['date'] ?? $item['joining_date'] ?? $item['DATE OF JOINING'] ?? ''
                 ];
             }, $data['data']);
+        } else {
+            // JSON decode error or missing 'data' – fallback to empty array
+            $membersArray = [];
         }
+    } else {
+        // cURL error or non‑200 response – fallback
+        $membersArray = [];
     }
     ?>
 
@@ -384,7 +389,11 @@
     // Inject the server‑side data directly into JavaScript
     var membersList = <?php echo json_encode($membersArray); ?>;
 
-    function renderMembers(filter = "") {
+    // Debug: log to console if data is loaded (remove in production)
+    console.log('Loaded ' + membersList.length + ' members.');
+
+    function renderMembers(filter) {
+        filter = filter || "";
         var tbody = document.getElementById("tableBody");
         var term = filter.toLowerCase().trim();
 
@@ -414,16 +423,16 @@
         tbody.innerHTML = html;
     }
 
-    // Render on page load and attach search listener
-    window.addEventListener("DOMContentLoaded", function() {
-        renderMembers();
-        var searchBox = document.getElementById("searchInput");
-        if (searchBox) {
-            searchBox.addEventListener("keyup", function(e) {
-                renderMembers(e.target.value);
-            });
-        }
-    });
+    // Render immediately (the table already shows "Loading..." but we replace it)
+    renderMembers();
+
+    // Attach search listener
+    var searchBox = document.getElementById("searchInput");
+    if (searchBox) {
+        searchBox.addEventListener("keyup", function(e) {
+            renderMembers(e.target.value);
+        });
+    }
     </script>
 
     <?php
