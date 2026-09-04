@@ -414,25 +414,7 @@ $sql = "SELECT id, ginra_id, member_name, designation, joining_date, membership_
                 </div>
             </div>
             <div class="card-body p-3 p-md-4">
-                <!-- search & info row -->
-                <div class="row align-items-center mb-3">
-                    <div class="col-md-6">
-                        <div class="search-wrapper">
-                            <div class="input-group input-group-sm">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text bg-white"><i
-                                            class="fas fa-search text-muted"></i></span>
-                                </div>
-                                <input type="text" id="tableSearch" class="form-control form-control-sm"
-                                    placeholder="Search by name, institute, GINRA ID...">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 text-md-right mt-2 mt-md-0">
-                        <small class="text-muted"><i class="far fa-calendar-alt mr-1"></i> Updated till 2026 · Members
-                            Pan-India</small>
-                    </div>
-                </div>
+                
                 <!-- responsive table wrapper -->
                 <div class="table-container bg-white rounded shadow-sm">
                     <div class="table-responsive">
