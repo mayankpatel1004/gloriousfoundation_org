@@ -1,4 +1,15 @@
-<?php include "connection.php"; ?>
+<?php include "connection.php"; 
+$sql = "SELECT id, ginra_id, member_name, designation, joining_date, membership_type 
+            FROM members 
+            WHERE 1=1 AND membership_type = 'Faculty' 
+            ORDER BY id ASC";
+
+    $stmt = $conn->prepare($sql);
+    $stmt->execute($params);
+
+    $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -309,54 +320,19 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <?php
-                                // --------------------------------------------------------------
-                                // SERVER-SIDE API CALL – no JavaScript, pure PHP
-                                // --------------------------------------------------------------
-                                $apiUrl = 'https://gloriousjournal.com/membership-api.html?data=Faculty';
-                                $members = [];
-
-                                $ch = curl_init();
-                                curl_setopt($ch, CURLOPT_URL, $apiUrl);
-                                curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-                                curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-                                curl_setopt($ch, CURLOPT_TIMEOUT, 10);
-                                $response = curl_exec($ch);
-                                $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-                                curl_close($ch);
-                                print_r($response); // Debugging line to check the raw response
-                               
-                                if ($httpCode == 200 && !empty($response)) {
-                                    $data = json_decode($response, true);
-                                    if (json_last_error() === JSON_ERROR_NONE && isset($data['data']) && is_array($data['data'])) {
-                                        foreach ($data['data'] as $item) {
-                                            $members[] = [
-                                                'sr'       => $item['sr'] ?? $item['sr_no'] ?? $item['SR.'] ?? '',
-                                                'ginraId'  => $item['ginra_id'] ?? $item['ginraf_id'] ?? $item['GINRA ID'] ?? '',
-                                                'details'  => $item['details'] ?? $item['member_details'] ?? $item['MEMBER DETAILS'] ?? '',
-                                                'date'     => $item['date'] ?? $item['joining_date'] ?? $item['DATE OF JOINING'] ?? ''
-                                            ];
-                                        }
-                                    }
-                                }
-
-                                if (count($members) === 0) {
-                                    echo '<tr><td colspan="4" class="text-center py-5 text-muted"><i class="fas fa-user-slash"></i> No faculty members found.</td></tr>';
-                                } else {
-                                    foreach ($members as $m) {
-                                        $sr = htmlspecialchars($m['sr']);
-                                        $ginraId = htmlspecialchars($m['ginraId']);
-                                        $details = $m['details']; // Already safe, but we can escape if needed
-                                        $date = htmlspecialchars($m['date'] ?: '—');
-                                        echo '<tr>';
-                                        echo '<td class="text-center font-weight-bold">' . $sr . '</td>';
-                                        echo '<td class="align-middle"><span class="ginra-badge"><i class="far fa-id-card mr-1"></i>' . $ginraId . '</span></td>';
-                                        echo '<td class="member-detail">' . $details . '</td>';
-                                        echo '<td class="text-center align-middle"><span class="badge-date"><i class="far fa-calendar-check mr-1"></i>' . $date . '</span></td>';
-                                        echo '</tr>';
-                                    }
-                                }
-                                ?>
+                                <?php if(isset($result) && $result != false):?>
+                                    <?php $index = 0;?>
+                                <?php foreach($result as $row): $index++;?>
+                                <tr>
+                                    <td class="text-center font-weight-bold"><?php echo $index;?></td>
+                                    <td class="align-middle"><span class="ginra-badge"><i
+                                                class="far fa-id-card mr-1"></i><?php echo $row['ginra_id'];?></span></td>
+                                    <td class="member-detail"><?php echo $row['member_name'];?>, <?php echo $row['designation'];?>, <?php echo $row['membership_type'];?></td>
+                                    <td class="text-center align-middle"><span class="badge-date"><i
+                                                class="far fa-calendar-check mr-1"></i><?php echo date("d M Y", strtotime($row['joining_date']));?></span></td>
+                                <?php endforeach; ?>
+                                <?php endif;?>
+                                
                             </tbody>
                         </table>
                     </div>
