@@ -52,7 +52,7 @@ include "connection.php";?>
                 and nursing excellence.</p>
             <br />
             <div class="text-center">
-                <img src="images/ginra.jpeg" alt="GINRA" />
+                <img src="images/ginra.jpeg" alt="GINRA" style="width:100%" />
             </div>
             <br />
         </div>
