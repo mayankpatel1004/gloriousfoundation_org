@@ -51,7 +51,10 @@ include "connection.php";?>
                 nurture future healthcare leaders, and contribute meaningfully toward the advancement of global health
                 and nursing excellence.</p>
             <br />
-
+            <div class="text-center">
+                <img src="images/ginra.jpeg" alt="GINRA" />
+            </div>
+            <br />
         </div>
     </section>
 
