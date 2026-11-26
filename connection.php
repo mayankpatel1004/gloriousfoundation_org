@@ -3,8 +3,14 @@ $website_name = "Glorious Foundation";
 $default_meta_title = "Home | ".$website_name;
 $default_meta_description = "Default Meta Description | ".$website_name;;
 $website_type = "Organization";
-//$url = "http://localhost/gloriousfoundation_org/";
-$url = "https://gloriousfoundation.org/";
+$host = $_SERVER['HTTP_HOST'] ?? 'localhost';
+
+if ($host === 'localhost' || $host === '127.0.0.1' || strpos($host, 'localhost:') === 0) {
+    $url = "http://localhost/gloriousfoundation_org/";
+} else {
+    $url = "https://gloriousfoundation.org/";
+}
+
 $contact = "+919844178870";
 $contact2 = "+919844178870";
 $email = "ginrafoundation@gmail.com";

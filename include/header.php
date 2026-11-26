@@ -85,6 +85,7 @@
                         <li><a class="dropdown-item" href="<?php echo $url;?>research-grants.php">Research Grants</a></li>
                         <li><a class="dropdown-item" href="<?php echo $url;?>scholarships.php">Scholarships</a></li>
                         <li><a class="dropdown-item" href="<?php echo $url;?>social-services.php">Social Services</a></li>
+                        <li><a class="dropdown-item" href="<?php echo $url;?>training-proposal.php">Training Proposal</a></li>
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
